@@ -1,6 +1,13 @@
-# E-learning startsjabloon
+# AI naar website
 
-Kale opzet voor een e-learning in het Green Office-design. Draait als website
+E-learning bij hulpmiddel 15 van de minor Circulaire Economie. Brengt een
+student van één HTML-bestand naar een repository, een gepubliceerd adres en een
+Firestore-backend, met Claude Code of Codex als hulp.
+
+Live: https://fabianb88.github.io/ai-naar-website/
+Voorbeeldpagina: https://fabianb88.github.io/materialenpaspoort-voorbeeld/
+
+Opgezet vanaf het e-learning startsjabloon in het Green Office-design. Draait als website
 (GitHub Pages of eigen server) én als SCORM-pakket in een LMS — dezelfde build.
 
 Gebouwd op [Adapt Framework](https://github.com/adaptlearning/adapt_framework)
@@ -45,7 +52,19 @@ def bouw(p):
     p.vraag('Kop', 'Vraagtekst', [('goed', True), ('fout', False)], feedback={...})
     p.invulvelden('Kop', '<p>Uitleg.</p>', [('veld-id', 'Label', 'Hint')])
     p.knoppenrij('Meenemen', '<p>Uitleg.</p>')
+    p.koppelvraag('Kop', 'Vraagtekst', [('links', 'rechts')], feedback={...})
+    p.commando('Kop', '<p>Intro.</p>', windows='...', mac='...', na='...')
 ```
+
+`p.commando()` maakt een codeblok met een kopieerknop. Geef `windows=` en
+`mac=` als de commando's verschillen, of `beide=` als ze gelijk zijn; een lijst
+van strings wordt een meerregelig blok.
+
+**Waarom de kopieerknop doet wat hij doet.** Zowel `navigator.clipboard` als
+`document.execCommand('copy')` eist een verse gebruikersactie. Die is verlopen
+zodra je een promise hebt afgewacht, dus een terugval in `.catch()` mislukt
+altijd. `js/kopieerKnop.js` probeert daarom eerst synchroon de oude route
+binnen dezelfde klik, en pas daarna de moderne API.
 
 Draai daarna `python tools/build_course.py && npx grunt build`.
 
