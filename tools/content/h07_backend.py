@@ -222,8 +222,12 @@ def bouw(p):
     p.tekst(
         'Testen, publiceren en teruglezen',
         '<p>Het formulier uit het voorbeeld laat zien hoe het eruit hoort te zien: drie '
-        'duidelijke keuzes, één tekstveld met een tekenteller, en een bevestiging na '
-        'verzenden. Bouw dat na, en houd het net zo klein.</p>'
+        'duidelijke keuzes, één tekstveld met een tekenteller, en na verzenden meteen '
+        'het resultaat. Bouw dat na, en houd het net zo klein.</p>'
+        '<p>In dat voorbeeld staat de opslag in twee functies, <code>leesMeldingen</code> '
+        'en <code>schrijfMelding</code>. Daar — en nergens anders — zit het verschil '
+        'tussen de browseropslag van het voorbeeld en de database die jij nu gaat '
+        'aansluiten. Kijk er even in voordat je verdergaat.</p>'
         '<p>Publiceer met <code>firebase deploy --only hosting</code>, open je site, en '
         'vul het formulier één keer in. Ga daarna in de console naar <i>Firestore '
         'Database</i> → tabblad <i>Gegevens</i>. Daar hoort je laatje '
