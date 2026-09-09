@@ -94,8 +94,8 @@ def bouw(p):
 
     p.tekst(
         '',
-        '<p>Daarna opent je browser. Kies je Google-account — hetzelfde als waarmee je '
-        'in hoofdstuk 2 het project hebt aangemaakt — en geef de Firebase CLI '
+        '<p>Daarna opent je browser. Kies je Google-account — hetzelfde als je in '
+        'hoofdstuk 2 hebt opgeschreven — en geef de Firebase CLI '
         'toestemming. Je krijgt een pagina te zien dat het gelukt is, en in je terminal '
         'staat dat je bent ingelogd.</p>'
         '<p>Zit je in je browser standaard met een ander Google-account ingelogd, kies '
@@ -104,12 +104,53 @@ def bouw(p):
 
     p.commando(
         'Controleren',
-        '<p>Dit is de test die er echt toe doet: ziet de CLI je project?</p>',
+        '<p>Werkt de koppeling?</p>',
         beide='firebase projects:list',
-        na='Je krijgt een lijstje met daarin het project uit hoofdstuk 2, met de '
-           'project-id die je toen hebt opgeschreven. Staat de lijst leeg of ontbreekt '
-           'je project, dan ben je met het verkeerde Google-account ingelogd. Draai '
-           'firebase logout en begin opnieuw.')
+        na='Heb je nog geen projecten, dan is de lijst leeg — dat klopt, die maak je '
+           'hieronder aan. Het gaat er hier alleen om dat het commando antwoordt en '
+           'niet om een inlogfout vraagt.')
+
+    p.tekst(
+        'En nu neemt je assistent het over',
+        '<p>Dit was het handwerk. Vanaf hier kan alles via een prompt, want de CLI’s '
+        'mogen nu namens jou werken. Het eerste dat je laat doen is je Firebase-project '
+        'aanmaken — dat hoeft dus niet in de console.</p>')
+
+    p.commando(
+        '',
+        '<p>Geef dit aan Claude Code of Codex, met je eigen projectnaam erin.</p>',
+        beide=[
+            'Maak een Firebase-project aan met de id materialenpaspoort-w3 en',
+            'zet het als actief project voor deze map. Controleer daarna dat het',
+            'in de lijst staat en laat me de uitvoer zien.',
+            '',
+            'Zet geen extra diensten aan en koppel geen betaalmethode: we blijven',
+            'op het gratis Spark-plan.',
+        ],
+        na='Krijg je terug dat de id al bezet is, kies dan een andere. Project-id’s zijn '
+           'wereldwijd uniek, dus algemene namen zijn meestal al weg.')
+
+    p.commando(
+        'Wat hij dan uitvoert',
+        '<p>Twee commando’s. De eerste maakt het project, de tweede onthoudt in deze '
+        'map welk project erbij hoort.</p>',
+        beide=[
+            'firebase projects:create materialenpaspoort-w3 --display-name "Materialenpaspoort W3"',
+            'firebase use materialenpaspoort-w3',
+        ],
+        na='De eerste regel is lang; laat hem gerust doorlopen in plaats van hem af te '
+           'breken, want Windows en macOS breken regels op verschillende manieren af.')
+
+    p.aandacht(
+        'Controleer of je op Spark zit',
+        '<p>Dit is het ene moment waarop het de moeite waard is om wél even in de '
+        '<a href="https://console.firebase.google.com" target="_blank" '
+        'rel="noopener">console</a> te kijken. Open je nieuwe project en zoek linksonder '
+        'welk plan er staat. Daar hoort <b>Spark</b> te staan.</p>'
+        '<p>Een project dat via de CLI wordt aangemaakt staat standaard op het gratis '
+        'plan, dus het hoort goed te zijn. Maar het is de enige instelling in deze '
+        'cursus die geld kan kosten als hij verkeerd staat, en dat is dertig seconden '
+        'kijken waard.</p>')
 
     p.accordeon(
         'Wat er nu op je computer staat',
@@ -153,14 +194,18 @@ def bouw(p):
              'Staat jouw project-id ertussen?'),
             ('h04-account', 'Is dat allebei je eigen account, niet je HAN-account?',
              'Controleer het echt, dit is de klassieke fout'),
+            ('h04-project', 'Welke project-id heeft je assistent aangemaakt?',
+             'Die komt terug in je webadres'),
+            ('h04-plan', 'Staat je project op Spark?',
+             'Linksonder in de console; de enige instelling die geld kan kosten'),
             ('h04-uitloggen', 'Wanneer log je weer uit, en op welke computer?',
              'Zeker doen op een gedeelde of geleende laptop'),
         ])
 
     p.knoppenrij(
         'Meenemen',
-        '<p>Werken beide controlecommando’s? Dan is alle voorbereiding klaar. Vanaf hier '
-        'gaat het over je eigen pagina.</p>')
+        '<p>Werken beide controlecommando’s en staat je project er? Dan is alle '
+        'voorbereiding klaar, en heb je voor het laatst iets met de hand gedaan.</p>')
 
     p.vraag(
         'Even checken',

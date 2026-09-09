@@ -29,21 +29,41 @@ def bouw(p):
         'goed te doen.</p>')
 
     p.tekst(
-        'Stappenplan: de database aanmaken',
-        '<ol>'
-        '<li><b>Ga in de Firebase-console naar <i>Firestore Database</i></b> en klik op '
-        '<i>Database maken</i>.</li>'
-        '<li><b>Kies een locatie in Europa</b>, bijvoorbeeld <code>eur3</code> of '
-        '<code>europe-west4</code>. Je gegevens staan dan binnen de EU, wat je bij '
-        'gegevens over mensen sowieso wilt. Let op: de locatie ligt daarna vast en is '
-        'niet meer te wijzigen.</li>'
-        '<li><b>Kies <i>Beginnen in productiemodus</i></b>, niet testmodus. Alles zit '
-        'dan dicht, en dat is precies goed: in de volgende stap zetten we exact één '
-        'deurtje open.</li>'
-        '<li><b>Registreer je pagina als web-app.</b> Ga naar Projectinstellingen → '
-        '<i>Jouw apps</i> → het <code>&lt;/&gt;</code>-icoon, geef hem een naam, en '
-        'kopieer het configuratieblok dat je krijgt. Dat heb je zo nodig.</li>'
-        '</ol>')
+        'Stappenplan: laat het klaarzetten',
+        '<p>Drie dingen moeten er komen: een database, een geregistreerde web-app, en de '
+        'instellingen van die app in je pagina. Alle drie via één prompt.</p>'
+        '<p>Merk op wat er hierdoor éók gebeurt: je krijgt de vraag over testmodus '
+        'nooit te zien. Via de CLI maak je de database zonder standaardregels, en zet je '
+        'er meteen je eigen regels op. Dat is niet alleen sneller maar ook veiliger.</p>')
+
+    p.commando(
+        '',
+        '',
+        beide=[
+            'Zet Firestore klaar voor dit project:',
+            '- maak de database aan in de regio eur3 (Europa)',
+            '- registreer een web-app met de naam Materialenpaspoort',
+            '- schrijf de firebaseConfig van die app in public/firebase-config.js',
+            '- maak een bestand firestore.rules en zet firestore in firebase.json',
+            '',
+            'Publiceer de regels nog niet: die schrijf ik zelf, in de volgende stap.',
+            'Laat me zien welke commando’s je gebruikt en wat eruit komt.',
+        ],
+        na='De regio ligt na het aanmaken vast en is niet meer te wijzigen. eur3 is '
+           'Europa; kies dat, zeker als er ooit gegevens over mensen in komen.')
+
+    p.commando(
+        'Wat hij dan uitvoert',
+        '<p>Drie commando’s. Het derde schrijft je instellingen weg naar een bestand, '
+        'zodat je ze niet hoeft over te tikken.</p>',
+        beide=[
+            'firebase firestore:databases:create "(default)" --location eur3',
+            'firebase apps:create WEB "Materialenpaspoort"',
+            'firebase apps:sdkconfig WEB --out public/firebase-config.js',
+        ],
+        na='Bestaat de database al, dan klaagt het eerste commando en kun je verder. '
+           'Het derde geeft een bestand met je apiKey en project-id erin — dat mag '
+           'gewoon mee in je repository, zie hieronder.')
 
     p.accordeon(
         'Die apiKey in je config is geen wachtwoord',
@@ -87,8 +107,10 @@ def bouw(p):
 
     p.commando(
         '',
-        '<p>Plak dit in de Firebase-console onder <i>Firestore Database</i> → '
-        '<i>Regels</i>, en klik op <i>Publiceren</i>.</p>',
+        '<p>Zet dit in <code>firestore.rules</code>, het bestand dat je assistent net heeft '
+        'aangemaakt. Schrijf het zelf of laat het schrijven — maar lees het hoe dan '
+        'ook regel voor regel door, want dit is het enige dat je database dicht '
+        'houdt.</p>',
         beide=[
             "rules_version = '2';",
             'service cloud.firestore {',
@@ -117,6 +139,15 @@ def bouw(p):
         ],
         na='Pas de drie waarden goed, sleets en kapot aan naar jouw eigen opties, en 500 '
            'naar de maximale lengte die je wilt toestaan.')
+
+    p.commando(
+        'Regels publiceren',
+        '<p>Een bestand op je laptop doet niets. Pas als je ze publiceert, gelden ze '
+        'op de server.</p>',
+        beide='firebase deploy --only firestore:rules',
+        na='Vanaf nu horen je regels bij je code: ze staan in je repository, ze gaan '
+           'mee in je commits, en je kunt terugzien wanneer je ze hebt gewijzigd. Dat '
+           'lukt niet als je ze in de console plakt.')
 
     p.accordeon(
         'Wat elke regel tegenhoudt',
@@ -148,8 +179,8 @@ def bouw(p):
 
     p.tekst(
         'Het formulier laten bouwen',
-        '<p>Nu de regels staan, mag je assistent de code schrijven. Geef hem deze '
-        'opdracht, en plak je eigen configuratieblok uit de console eronder.</p>')
+        '<p>Nu de regels staan, mag je assistent de code schrijven. Je '
+        'configuratiebestand staat er al, dus je hoeft niets over te tikken.</p>')
 
     p.commando(
         '',
@@ -165,10 +196,8 @@ def bouw(p):
             'moment. Gebruik de modulaire web-SDK via de gstatic-CDN.',
             '',
             'Vraag geen naam, geen e-mailadres en geen andere persoonsgegevens.',
-            'Zet mijn firebaseConfig erin zoals hieronder. Lees niets terug uit',
-            'de database: de regels staan alleen aanmaken toe.',
-            '',
-            '<hier plak je je eigen firebaseConfig uit de console>',
+            'Gebruik de firebaseConfig uit public/firebase-config.js. Lees niets',
+            'terug uit de database: de regels staan alleen aanmaken toe.',
         ],
         na='De laatste twee alinea’s zijn de belangrijkste. Zonder die instructies '
            'bouwt een assistent al snel een naamveld en een overzichtslijst erbij, en '

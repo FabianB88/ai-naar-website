@@ -6,7 +6,7 @@
   "displayTitle": "AI naar website",
   "subtitle": "Van één HTML-bestand naar een gepubliceerde site met een backend",
   "description": "Minor Circulaire Economie",
-  "body": "Hulpmiddel 15 brengt je tot een werkende pagina op je eigen laptop. Deze cursus brengt hem online, met versiegeschiedenis en met een database eronder die antwoorden van bezoekers bewaart. Je laat Claude Code of Codex het meeste werk doen en leert precies welke drie stappen je zelf moet zetten. Alles gratis en zonder betaalgegevens.",
+  "body": "Hulpmiddel 15 brengt je tot een werkende pagina op je eigen laptop. Deze cursus brengt hem online, met versiegeschiedenis en met een database eronder die antwoorden van bezoekers bewaart. Claude Code of Codex doet vrijwel alles; er zijn precies vier momenten waarop jij aan de beurt bent. Alles gratis en zonder betaalgegevens.",
   "instruction": "",
   "_buttons": {
     "_submit": {
@@ -57,5 +57,6 @@
         "done": "Klaar"
       }
     }
-  }
+  },
+  "_latestTrackingId": 122
 }

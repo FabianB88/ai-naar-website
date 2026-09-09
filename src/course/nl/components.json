@@ -75,7 +75,7 @@
       },
       {
         "title": "Wat jij zelf doet — en waarom",
-        "body": "<p>Drie momenten blijven van jou. Je maakt je eigen accounts aan, en je voltooit de twee inlogstappen: <code>gh auth login</code> voor GitHub en <code>firebase login</code> voor Firebase.</p><p>Dat is geen beperking van de techniek maar een grens die je wilt houden. Inloggen gebeurt in een browser en hangt aan jouw identiteit. Een assistent die jouw wachtwoord intikt, is precies wat je nooit moet toestaan — ook niet als het sneller zou zijn.</p><p>In de praktijk werkt het samen: de assistent start het commando, opent de juiste pagina, en jij typt de code of kiest je account.</p>"
+        "body": "<p>Precies vier momenten, en meer niet. Je maakt je twee accounts aan, en je voltooit de twee inlogstappen: <code>gh auth login</code> voor GitHub en <code>firebase login</code> voor Firebase.</p><p>Al het andere gaat via een prompt. Ook het aanmaken van je Firebase-project, de database en de instellingen — daar hoef je nergens voor te klikken, ook al lijkt dat wel zo als je online handleidingen leest.</p><p>Dat is geen beperking van de techniek maar een grens die je wilt houden. Inloggen gebeurt in een browser en hangt aan jouw identiteit. Een assistent die jouw wachtwoord intikt, is precies wat je nooit moet toestaan — ook niet als het sneller zou zijn.</p><p>In de praktijk werkt het samen: de assistent start het commando, opent de juiste pagina, en jij typt de code of kiest je account.</p>"
       },
       {
         "title": "Zet dit vooraf in je AI-instructies",
@@ -92,7 +92,7 @@
     "_layout": "full",
     "title": "Stappenplan: de hele route in zeven stappen",
     "displayTitle": "Stappenplan: de hele route in zeven stappen",
-    "body": "<p>Zo ziet het geheel eruit. De eerste keer ben je ongeveer twee uur bezig, waarvan het meeste in stap 1 tot en met 3. Die doe je nooit meer opnieuw: bij je volgende project begin je bij stap 4.</p><ol><li><b>Accounts aanmaken.</b> GitHub en Firebase, allebei met je eigen account. Hoofdstuk 2.</li><li><b>Gereedschap installeren.</b> Git, Node.js, de GitHub CLI en de Firebase CLI. Laat je assistent dit doen. Hoofdstuk 3.</li><li><b>Koppelen.</b> Twee keer inloggen, en je Firebase-project kiezen. Hoofdstuk 4.</li><li><b>Je pagina in een repository zetten.</b> Eerste commit, daarna pushen naar GitHub. Hoofdstuk 5.</li><li><b>Publiceren.</b> Firebase Hosting, en je krijgt een adres terug. Hoofdstuk 6.</li><li><b>De backend erbij.</b> Een formulier waarvan de antwoorden in Firestore landen, met dichte beveiligingsregels. Hoofdstuk 7.</li><li><b>Controleren en opleveren.</b> De lijst langs voordat je het laat zien, en opruimen als het project klaar is. Hoofdstuk 8.</li></ol>",
+    "body": "<p>Zo ziet het geheel eruit. De eerste keer ben je ongeveer twee uur bezig, waarvan het meeste in stap 1 tot en met 3. Die doe je nooit meer opnieuw: bij je volgende project begin je bij stap 4.</p><p>Alleen stap 1 en stap 3 doe je met de hand. De rest geef je als opdracht aan je assistent; de commando’s staan er telkens bij zodat je kunt volgen wat hij doet en het zelf kunt overnemen als hij vastloopt.</p><ol><li><b>Accounts aanmaken.</b> GitHub en Firebase, allebei met je eigen account. Hoofdstuk 2.</li><li><b>Gereedschap installeren.</b> Git, Node.js, de GitHub CLI en de Firebase CLI. Laat je assistent dit doen. Hoofdstuk 3.</li><li><b>Koppelen.</b> Twee keer inloggen, en je Firebase-project kiezen. Hoofdstuk 4.</li><li><b>Je pagina in een repository zetten.</b> Eerste commit, daarna pushen naar GitHub. Hoofdstuk 5.</li><li><b>Publiceren.</b> Firebase Hosting, en je krijgt een adres terug. Hoofdstuk 6.</li><li><b>De backend erbij.</b> Een formulier waarvan de antwoorden in Firestore landen, met dichte beveiligingsregels. Hoofdstuk 7.</li><li><b>Controleren en opleveren.</b> De lijst langs voordat je het laat zien, en opruimen als het project klaar is. Hoofdstuk 8.</li></ol>",
     "instruction": "",
     "_id": "c-106",
     "_parentId": "b-106",
@@ -205,8 +205,8 @@
     "displayTitle": "",
     "body": "<a class=\"terugnaar\" href=\"#/\"><span class=\"terugnaar__pijl\" aria-hidden=\"true\">&#8592;</span>Overzicht</a>",
     "instruction": "",
-    "_id": "c-210",
-    "_parentId": "b-210",
+    "_id": "c-211",
+    "_parentId": "b-211",
     "_type": "component"
   },
   {
@@ -249,12 +249,24 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Stappenplan: Firebase-project aanmaken",
-    "displayTitle": "Stappenplan: Firebase-project aanmaken",
-    "body": "<p>Firebase draait op een Google-account. Heb je er al een, dan kun je die gebruiken — een privé-account, niet je HAN-account.</p><ol><li><b>Ga naar <a href=\"https://console.firebase.google.com\" target=\"_blank\" rel=\"noopener\">console.firebase.google.com</a></b> en log in met je Google-account.</li><li><b>Klik op <i>Project toevoegen</i></b> en geef het een naam die je terugkent, bijvoorbeeld <code>materialenpaspoort-w3</code>. Firebase maakt daar een project-id van door er zo nodig een paar tekens achter te plakken. Schrijf die id op: die heb je in hoofdstuk 4 nodig, en hij staat ook in je webadres.</li><li><b>Zet Google Analytics uit.</b> Je hebt het niet nodig, het vraagt om een extra akkoord, en het verzamelt gegevens over je bezoekers die je voor dit project niet wilt hebben.</li><li><b>Wacht tot het project klaar is</b> en klik door naar het overzicht.</li><li><b>Controleer linksonder welk plan er staat.</b> Daar hoort <b>Spark</b> te staan, het gratis plan. Zo niet, dan zit je in het verkeerde project.</li></ol>",
+    "title": "En een Google-account voor Firebase",
+    "displayTitle": "En een Google-account voor Firebase",
+    "body": "<p>Firebase draait op een Google-account. Heb je er een, dan ben je klaar — een privé-account, niet je HAN-account. Zo niet, maak er dan een aan op <a href=\"https://accounts.google.com/signup\" target=\"_blank\" rel=\"noopener\">accounts.google.com</a>.</p><p>Meer hoef je hier niet te doen. Het <b>project</b> zelf maak je niet met de hand aan in de console: dat doet je assistent straks met één commando, zodra je in hoofdstuk 4 bent ingelogd. Dat scheelt je een wizard met vragen waar je toch moet gokken, en je houdt de naam en de instellingen in je eigen aantekeningen in plaats van in een browsertabblad.</p>",
     "instruction": "",
     "_id": "c-204",
     "_parentId": "b-204",
+    "_type": "component"
+  },
+  {
+    "_component": "text",
+    "_classes": "attention",
+    "_layout": "full",
+    "title": "Dit zijn de enige twee dingen die je met de hand doet",
+    "displayTitle": "Dit zijn de enige twee dingen die je met de hand doet",
+    "body": "<p>Accounts aanmaken kan een assistent niet voor je doen, en dat hoort ook niet: er komt een e-mailbevestiging aan te pas, een CAPTCHA, en een code op je telefoon. Alles wat daarná komt — projecten, databases, instellingen, publiceren — gaat via een prompt.</p><p>Kom je later in deze cursus een instructie tegen om ergens in een console te gaan klikken, dan staat erbij waarom dat niet anders kan. Dat gebeurt precies twee keer, en allebei alleen om ergens naar te <i>kijken</i>.</p>",
+    "instruction": "",
+    "_id": "c-205",
+    "_parentId": "b-205",
     "_type": "component"
   },
   {
@@ -284,8 +296,8 @@
         "body": "<p>Functions, App Hosting, Data Connect, Remote Config, Extensions, en wat er dit jaar bij komt. Stuk voor stuk nuttig in een echt product, en stuk voor stuk overbodig hier.</p><p>Vraagt je AI-assistent om er een aan te zetten, vraag dan eerst waaróm. Meestal blijkt het antwoord dat het ook zonder kan.</p>"
       }
     ],
-    "_id": "c-205",
-    "_parentId": "b-205",
+    "_id": "c-206",
+    "_parentId": "b-206",
     "_type": "component"
   },
   {
@@ -294,10 +306,10 @@
     "_layout": "full",
     "title": "Oefening: leg je gegevens vast",
     "displayTitle": "Oefening: leg je gegevens vast",
-    "body": "<p>Vul dit in zodra je beide accounts hebt. Je hebt deze gegevens de rest van de cursus nodig, en je zoekt ze anders elke keer opnieuw op.</p><div class=\"canvas-groep\" data-laag=\"Oefening: leg je gegevens vast\"><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h02-github\">Je GitHub-gebruikersnaam</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h02-github\" name=\"h02-github\" rows=\"2\" placeholder=\"Zoals hij in je adressen komt\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h02-mail\">Met welk e-mailadres staat dat account geregistreerd?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h02-mail\" name=\"h02-mail\" rows=\"2\" placeholder=\"Je eigen adres, niet je schooladres\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h02-2fa\">Waar staan je GitHub-herstelcodes?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h02-2fa\" name=\"h02-2fa\" rows=\"2\" placeholder=\"Niet alleen op je telefoon\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h02-project\">Je Firebase-project-id</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h02-project\" name=\"h02-project\" rows=\"2\" placeholder=\"Let op: id, niet de naam\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h02-plan\">Welk plan staat er linksonder in de console?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h02-plan\" name=\"h02-plan\" rows=\"2\" placeholder=\"Hier hoort Spark te staan\"></textarea></div></div>",
+    "body": "<p>Vul dit in zodra je beide accounts hebt. Je hebt deze gegevens de rest van de cursus nodig, en je zoekt ze anders elke keer opnieuw op.</p><div class=\"canvas-groep\" data-laag=\"Oefening: leg je gegevens vast\"><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h02-github\">Je GitHub-gebruikersnaam</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h02-github\" name=\"h02-github\" rows=\"2\" placeholder=\"Zoals hij in je adressen komt\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h02-mail\">Met welk e-mailadres staat dat account geregistreerd?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h02-mail\" name=\"h02-mail\" rows=\"2\" placeholder=\"Je eigen adres, niet je schooladres\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h02-2fa\">Waar staan je GitHub-herstelcodes?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h02-2fa\" name=\"h02-2fa\" rows=\"2\" placeholder=\"Niet alleen op je telefoon\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h02-google\">Met welk Google-account ga je Firebase gebruiken?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h02-google\" name=\"h02-google\" rows=\"2\" placeholder=\"Privé, en onthoud welke als je er meerdere hebt\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h02-naam\">Hoe wil je je Firebase-project noemen?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h02-naam\" name=\"h02-naam\" rows=\"2\" placeholder=\"Kleine letters en streepjes; je assistent maakt hem in hoofdstuk 4\"></textarea></div></div>",
     "instruction": "",
-    "_id": "c-206",
-    "_parentId": "b-206",
+    "_id": "c-207",
+    "_parentId": "b-207",
     "_type": "component"
   },
   {
@@ -306,10 +318,10 @@
     "_layout": "full",
     "title": "Meenemen",
     "displayTitle": "Meenemen",
-    "body": "<p>Zet je project-id apart; je typt hem in hoofdstuk 4 en 6 nog een paar keer.</p><div class=\"canvas-acties\"><button type=\"button\" class=\"btn-canvas js-canvas-kopieren\">Kopieer als tekst</button> <button type=\"button\" class=\"btn-canvas btn-canvas--stil js-canvas-wissen\">Wis mijn antwoorden</button><span class=\"canvas-melding js-canvas-melding\" role=\"status\" aria-live=\"polite\"></span></div>",
+    "body": "<p>Twee accounts, meer niet. In het volgende hoofdstuk laat je je assistent het gereedschap installeren.</p><div class=\"canvas-acties\"><button type=\"button\" class=\"btn-canvas js-canvas-kopieren\">Kopieer als tekst</button> <button type=\"button\" class=\"btn-canvas btn-canvas--stil js-canvas-wissen\">Wis mijn antwoorden</button><span class=\"canvas-melding js-canvas-melding\" role=\"status\" aria-live=\"polite\"></span></div>",
     "instruction": "",
-    "_id": "c-207",
-    "_parentId": "b-207",
+    "_id": "c-208",
+    "_parentId": "b-208",
     "_type": "component"
   },
   {
@@ -359,8 +371,8 @@
         "final": "<p>Nog niet helemaal.</p>"
       }
     },
-    "_id": "c-208",
-    "_parentId": "b-208",
+    "_id": "c-209",
+    "_parentId": "b-209",
     "_type": "component"
   },
   {
@@ -371,8 +383,8 @@
     "displayTitle": "",
     "body": "<div class=\"paginanav__rij\"><a class=\"paginanav__knop paginanav__knop--stil\" href=\"#/\"><span class=\"paginanav__label\">Terug naar</span><span class=\"paginanav__titel\">Overzicht</span></a><a class=\"paginanav__knop\" href=\"#/id/co-3\"><span class=\"paginanav__label\">Volgende onderdeel</span><span class=\"paginanav__titel\">Git, Node en de twee CLI’s</span></a></div>",
     "instruction": "",
-    "_id": "c-209",
-    "_parentId": "b-209",
+    "_id": "c-210",
+    "_parentId": "b-210",
     "_type": "component"
   },
   {
@@ -571,7 +583,7 @@
     "_layout": "full",
     "title": "Tekst",
     "displayTitle": "",
-    "body": "<div class=\"paginanav__rij\"><a class=\"paginanav__knop paginanav__knop--stil\" href=\"#/\"><span class=\"paginanav__label\">Terug naar</span><span class=\"paginanav__titel\">Overzicht</span></a><a class=\"paginanav__knop\" href=\"#/id/co-4\"><span class=\"paginanav__label\">Volgende onderdeel</span><span class=\"paginanav__titel\">Koppelen: de drie inlogmomenten</span></a></div>",
+    "body": "<div class=\"paginanav__rij\"><a class=\"paginanav__knop paginanav__knop--stil\" href=\"#/\"><span class=\"paginanav__label\">Terug naar</span><span class=\"paginanav__titel\">Overzicht</span></a><a class=\"paginanav__knop\" href=\"#/id/co-4\"><span class=\"paginanav__label\">Volgende onderdeel</span><span class=\"paginanav__titel\">Koppelen, en dan neemt de AI het over</span></a></div>",
     "instruction": "",
     "_id": "c-311",
     "_parentId": "b-311",
@@ -585,8 +597,8 @@
     "displayTitle": "",
     "body": "<a class=\"terugnaar\" href=\"#/\"><span class=\"terugnaar__pijl\" aria-hidden=\"true\">&#8592;</span>Overzicht</a>",
     "instruction": "",
-    "_id": "c-418",
-    "_parentId": "b-418",
+    "_id": "c-422",
+    "_parentId": "b-422",
     "_type": "component"
   },
   {
@@ -715,7 +727,7 @@
     "_layout": "full",
     "title": "Tekst",
     "displayTitle": "",
-    "body": "<p>Daarna opent je browser. Kies je Google-account — hetzelfde als waarmee je in hoofdstuk 2 het project hebt aangemaakt — en geef de Firebase CLI toestemming. Je krijgt een pagina te zien dat het gelukt is, en in je terminal staat dat je bent ingelogd.</p><p>Zit je in je browser standaard met een ander Google-account ingelogd, kies dan bewust. Dit is de tweede plek waar mensen per ongeluk hun schoolaccount pakken en zich later afvragen waarom hun project onvindbaar is.</p>",
+    "body": "<p>Daarna opent je browser. Kies je Google-account — hetzelfde als je in hoofdstuk 2 hebt opgeschreven — en geef de Firebase CLI toestemming. Je krijgt een pagina te zien dat het gelukt is, en in je terminal staat dat je bent ingelogd.</p><p>Zit je in je browser standaard met een ander Google-account ingelogd, kies dan bewust. Dit is de tweede plek waar mensen per ongeluk hun schoolaccount pakken en zich later afvragen waarom hun project onvindbaar is.</p>",
     "instruction": "",
     "_id": "c-411",
     "_parentId": "b-411",
@@ -727,10 +739,58 @@
     "_layout": "full",
     "title": "Controleren",
     "displayTitle": "Controleren",
-    "body": "<p>Dit is de test die er echt toe doet: ziet de CLI je project?</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>firebase projects:list</code></pre></div></div><p class=\"commando__na\">Je krijgt een lijstje met daarin het project uit hoofdstuk 2, met de project-id die je toen hebt opgeschreven. Staat de lijst leeg of ontbreekt je project, dan ben je met het verkeerde Google-account ingelogd. Draai firebase logout en begin opnieuw.</p>",
+    "body": "<p>Werkt de koppeling?</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>firebase projects:list</code></pre></div></div><p class=\"commando__na\">Heb je nog geen projecten, dan is de lijst leeg — dat klopt, die maak je hieronder aan. Het gaat er hier alleen om dat het commando antwoordt en niet om een inlogfout vraagt.</p>",
     "instruction": "",
     "_id": "c-412",
     "_parentId": "b-412",
+    "_type": "component"
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "En nu neemt je assistent het over",
+    "displayTitle": "En nu neemt je assistent het over",
+    "body": "<p>Dit was het handwerk. Vanaf hier kan alles via een prompt, want de CLI’s mogen nu namens jou werken. Het eerste dat je laat doen is je Firebase-project aanmaken — dat hoeft dus niet in de console.</p>",
+    "instruction": "",
+    "_id": "c-413",
+    "_parentId": "b-413",
+    "_type": "component"
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Tekst",
+    "displayTitle": "",
+    "body": "<p>Geef dit aan Claude Code of Codex, met je eigen projectnaam erin.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>Maak een Firebase-project aan met de id materialenpaspoort-w3 en\nzet het als actief project voor deze map. Controleer daarna dat het\nin de lijst staat en laat me de uitvoer zien.\n\nZet geen extra diensten aan en koppel geen betaalmethode: we blijven\nop het gratis Spark-plan.</code></pre></div></div><p class=\"commando__na\">Krijg je terug dat de id al bezet is, kies dan een andere. Project-id’s zijn wereldwijd uniek, dus algemene namen zijn meestal al weg.</p>",
+    "instruction": "",
+    "_id": "c-414",
+    "_parentId": "b-414",
+    "_type": "component"
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Wat hij dan uitvoert",
+    "displayTitle": "Wat hij dan uitvoert",
+    "body": "<p>Twee commando’s. De eerste maakt het project, de tweede onthoudt in deze map welk project erbij hoort.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>firebase projects:create materialenpaspoort-w3 --display-name &quot;Materialenpaspoort W3&quot;\nfirebase use materialenpaspoort-w3</code></pre></div></div><p class=\"commando__na\">De eerste regel is lang; laat hem gerust doorlopen in plaats van hem af te breken, want Windows en macOS breken regels op verschillende manieren af.</p>",
+    "instruction": "",
+    "_id": "c-415",
+    "_parentId": "b-415",
+    "_type": "component"
+  },
+  {
+    "_component": "text",
+    "_classes": "attention",
+    "_layout": "full",
+    "title": "Controleer of je op Spark zit",
+    "displayTitle": "Controleer of je op Spark zit",
+    "body": "<p>Dit is het ene moment waarop het de moeite waard is om wél even in de <a href=\"https://console.firebase.google.com\" target=\"_blank\" rel=\"noopener\">console</a> te kijken. Open je nieuwe project en zoek linksonder welk plan er staat. Daar hoort <b>Spark</b> te staan.</p><p>Een project dat via de CLI wordt aangemaakt staat standaard op het gratis plan, dus het hoort goed te zijn. Maar het is de enige instelling in deze cursus die geld kan kosten als hij verkeerd staat, en dat is dertig seconden kijken waard.</p>",
+    "instruction": "",
+    "_id": "c-416",
+    "_parentId": "b-416",
     "_type": "component"
   },
   {
@@ -756,8 +816,8 @@
         "body": "<p>Bij GitHub: Settings → Applications → Authorized OAuth Apps, daar staat GitHub CLI tussen. Bij Google: <a href=\"https://myaccount.google.com/permissions\" target=\"_blank\" rel=\"noopener\">myaccount.google.com/permissions</a>, zoek Firebase CLI.</p><p>Handig om te weten als je laptop kwijtraakt: daar zet je de toegang uit, niet in je terminal.</p>"
       }
     ],
-    "_id": "c-413",
-    "_parentId": "b-413",
+    "_id": "c-417",
+    "_parentId": "b-417",
     "_type": "component"
   },
   {
@@ -766,10 +826,10 @@
     "_layout": "full",
     "title": "Oefening: leg je koppeling vast",
     "displayTitle": "Oefening: leg je koppeling vast",
-    "body": "<p>Twee regels uitvoer, maar wel de twee die bepalen of de rest van de cursus werkt.</p><div class=\"canvas-groep\" data-laag=\"Oefening: leg je koppeling vast\"><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-gh\">Wat zegt gh auth status precies?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-gh\" name=\"h04-gh\" rows=\"2\" placeholder=\"Welk account staat erbij?\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-fb\">Welke projecten geeft firebase projects:list terug?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-fb\" name=\"h04-fb\" rows=\"2\" placeholder=\"Staat jouw project-id ertussen?\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-account\">Is dat allebei je eigen account, niet je HAN-account?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-account\" name=\"h04-account\" rows=\"2\" placeholder=\"Controleer het echt, dit is de klassieke fout\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-uitloggen\">Wanneer log je weer uit, en op welke computer?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-uitloggen\" name=\"h04-uitloggen\" rows=\"2\" placeholder=\"Zeker doen op een gedeelde of geleende laptop\"></textarea></div></div>",
+    "body": "<p>Twee regels uitvoer, maar wel de twee die bepalen of de rest van de cursus werkt.</p><div class=\"canvas-groep\" data-laag=\"Oefening: leg je koppeling vast\"><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-gh\">Wat zegt gh auth status precies?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-gh\" name=\"h04-gh\" rows=\"2\" placeholder=\"Welk account staat erbij?\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-fb\">Welke projecten geeft firebase projects:list terug?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-fb\" name=\"h04-fb\" rows=\"2\" placeholder=\"Staat jouw project-id ertussen?\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-account\">Is dat allebei je eigen account, niet je HAN-account?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-account\" name=\"h04-account\" rows=\"2\" placeholder=\"Controleer het echt, dit is de klassieke fout\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-project\">Welke project-id heeft je assistent aangemaakt?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-project\" name=\"h04-project\" rows=\"2\" placeholder=\"Die komt terug in je webadres\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-plan\">Staat je project op Spark?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-plan\" name=\"h04-plan\" rows=\"2\" placeholder=\"Linksonder in de console; de enige instelling die geld kan kosten\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-uitloggen\">Wanneer log je weer uit, en op welke computer?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-uitloggen\" name=\"h04-uitloggen\" rows=\"2\" placeholder=\"Zeker doen op een gedeelde of geleende laptop\"></textarea></div></div>",
     "instruction": "",
-    "_id": "c-414",
-    "_parentId": "b-414",
+    "_id": "c-418",
+    "_parentId": "b-418",
     "_type": "component"
   },
   {
@@ -778,10 +838,10 @@
     "_layout": "full",
     "title": "Meenemen",
     "displayTitle": "Meenemen",
-    "body": "<p>Werken beide controlecommando’s? Dan is alle voorbereiding klaar. Vanaf hier gaat het over je eigen pagina.</p><div class=\"canvas-acties\"><button type=\"button\" class=\"btn-canvas js-canvas-kopieren\">Kopieer als tekst</button> <button type=\"button\" class=\"btn-canvas btn-canvas--stil js-canvas-wissen\">Wis mijn antwoorden</button><span class=\"canvas-melding js-canvas-melding\" role=\"status\" aria-live=\"polite\"></span></div>",
+    "body": "<p>Werken beide controlecommando’s en staat je project er? Dan is alle voorbereiding klaar, en heb je voor het laatst iets met de hand gedaan.</p><div class=\"canvas-acties\"><button type=\"button\" class=\"btn-canvas js-canvas-kopieren\">Kopieer als tekst</button> <button type=\"button\" class=\"btn-canvas btn-canvas--stil js-canvas-wissen\">Wis mijn antwoorden</button><span class=\"canvas-melding js-canvas-melding\" role=\"status\" aria-live=\"polite\"></span></div>",
     "instruction": "",
-    "_id": "c-415",
-    "_parentId": "b-415",
+    "_id": "c-419",
+    "_parentId": "b-419",
     "_type": "component"
   },
   {
@@ -831,8 +891,8 @@
         "final": "<p>Nog niet helemaal.</p>"
       }
     },
-    "_id": "c-416",
-    "_parentId": "b-416",
+    "_id": "c-420",
+    "_parentId": "b-420",
     "_type": "component"
   },
   {
@@ -843,8 +903,8 @@
     "displayTitle": "",
     "body": "<div class=\"paginanav__rij\"><a class=\"paginanav__knop paginanav__knop--stil\" href=\"#/\"><span class=\"paginanav__label\">Terug naar</span><span class=\"paginanav__titel\">Overzicht</span></a><a class=\"paginanav__knop\" href=\"#/id/co-5\"><span class=\"paginanav__label\">Volgende onderdeel</span><span class=\"paginanav__titel\">Je pagina in een repository</span></a></div>",
     "instruction": "",
-    "_id": "c-417",
-    "_parentId": "b-417",
+    "_id": "c-421",
+    "_parentId": "b-421",
     "_type": "component"
   },
   {
@@ -1089,8 +1149,8 @@
     "displayTitle": "",
     "body": "<a class=\"terugnaar\" href=\"#/\"><span class=\"terugnaar__pijl\" aria-hidden=\"true\">&#8592;</span>Overzicht</a>",
     "instruction": "",
-    "_id": "c-616",
-    "_parentId": "b-616",
+    "_id": "c-617",
+    "_parentId": "b-617",
     "_type": "component"
   },
   {
@@ -1109,9 +1169,9 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Stappenplan: publiceren in vier stappen",
-    "displayTitle": "Stappenplan: publiceren in vier stappen",
-    "body": "<p>Voer dit uit in dezelfde map als je repository uit hoofdstuk 5.</p><ol><li><b>Zet Hosting klaar</b> met de init-wizard. Dat doe je één keer per project.</li><li><b>Verplaats je pagina</b> naar de map die de wizard heeft gemaakt.</li><li><b>Publiceer.</b> Eén commando, en je krijgt je adres terug.</li><li><b>Leg de nieuwe bestanden vast</b> in een commit, zodat je repository klopt met wat er online staat.</li></ol>",
+    "title": "Stappenplan: publiceren",
+    "displayTitle": "Stappenplan: publiceren",
+    "body": "<p>Drie stappen, en één prompt doet de eerste twee. Voer dit uit in dezelfde map als je repository uit hoofdstuk 5.</p><ol><li><b>Laat je assistent Hosting inrichten.</b> Hij schrijft twee kleine bestanden en verplaatst je pagina naar de juiste map.</li><li><b>Publiceren.</b> Eén commando, en je krijgt je adres terug.</li><li><b>Vastleggen.</b> Zodat je repository klopt met wat er online staat.</li></ol>",
     "instruction": "",
     "_id": "c-602",
     "_parentId": "b-602",
@@ -1121,9 +1181,9 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Stap 1: Hosting klaarzetten",
-    "displayTitle": "Stap 1: Hosting klaarzetten",
-    "body": "<div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>firebase init hosting</code></pre></div></div><p class=\"commando__na\">Ook dit is een wizard met vragen. De antwoorden staan hieronder.</p>",
+    "title": "Stap 1: de prompt",
+    "displayTitle": "Stap 1: de prompt",
+    "body": "<div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>Richt Firebase Hosting in voor dit project. Maak een map public,\nverplaats mijn index.html daarheen, en schrijf firebase.json en\n.firebaserc met mijn project-id erin. Geen single-page app en geen\nGitHub Actions.\n\nGebruik de init-wizard niet, schrijf de bestanden gewoon zelf.\nLaat me daarna zien wat erin staat.</code></pre></div></div><p class=\"commando__na\">Die laatste instructie is belangrijk. \"firebase init hosting\" is een wizard die op antwoorden wacht, en daar loopt een assistent op vast. De twee bestanden die de wizard maakt, kan hij prima zelf schrijven.</p>",
     "instruction": "",
     "_id": "c-603",
     "_parentId": "b-603",
@@ -1133,9 +1193,9 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Tekst",
-    "displayTitle": "",
-    "body": "<ol><li><b>Please select an option</b> → <code>Use an existing project</code>, en kies dan het project uit hoofdstuk 2.</li><li><b>What do you want to use as your public directory?</b> → <code>public</code>. Dat is de map waarvan de inhoud online komt; alles daarbuiten blijft privé.</li><li><b>Configure as a single-page app?</b> → <code>No</code>. Dat is voor webapps met eigen navigatie; jij hebt losse pagina’s.</li><li><b>Set up automatic builds and deploys with GitHub?</b> → <code>No</code>. Kan later; nu wil je eerst begrijpen wat er gebeurt als je zelf publiceert.</li><li><b>File public/index.html already exists. Overwrite?</b> → <code>No</code>, als je je eigen pagina daar al had staan. Anders maakt hij er een welkomstpagina overheen.</li></ol><p>Je hebt nu twee nieuwe bestanden: <code>firebase.json</code> met de instellingen, en <code>.firebaserc</code> waarin staat welk project erbij hoort. Die horen allebei gewoon in je repository.</p>",
+    "title": "Wat er dan in firebase.json staat",
+    "displayTitle": "Wat er dan in firebase.json staat",
+    "body": "<p>Je hoeft dit niet uit je hoofd te kennen, maar je moet het wel kunnen herkennen. Er staat: neem alles uit de map <code>public</code>, behalve deze drie dingen.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>{\n  &quot;hosting&quot;: {\n    &quot;public&quot;: &quot;public&quot;,\n    &quot;ignore&quot;: [&quot;firebase.json&quot;, &quot;**/.*&quot;, &quot;**/node_modules/**&quot;]\n  }\n}</code></pre></div></div><p class=\"commando__na\">In .firebaserc staat alleen welk project erbij hoort. Allebei horen ze gewoon in je repository — er zit niets geheims in.</p>",
     "instruction": "",
     "_id": "c-604",
     "_parentId": "b-604",
@@ -1143,11 +1203,11 @@
   },
   {
     "_component": "text",
-    "_classes": "",
+    "_classes": "attention",
     "_layout": "full",
-    "title": "Stap 2: je pagina op de goede plek",
-    "displayTitle": "Stap 2: je pagina op de goede plek",
-    "body": "<p>Alles wat online moet komen, gaat in <code>public</code>. Staat je pagina nog in de hoofdmap, verplaats hem dan.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows &middot; PowerShell</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>Move-Item index.html public\\index.html -Force</code></pre></div><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">macOS &middot; Terminal</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>mv index.html public/index.html</code></pre></div></div><p class=\"commando__na\">Heb je ook afbeeldingen of een los CSS-bestand, dan gaan die mee in dezelfde map. Wat niet in public staat, komt niet online.</p>",
+    "title": "Wat niet in public staat, komt niet online",
+    "displayTitle": "Wat niet in public staat, komt niet online",
+    "body": "<p>Dat is precies de bedoeling, en het is meteen je vangnet. Je aantekeningen, je ruwe data en je losse notities staan buiten die map en gaan dus niet mee, ook niet per ongeluk.</p><p>Omgekeerd: heb je afbeeldingen of een los CSS-bestand, dan moeten die wél in <code>public</code>. Staat je pagina online zonder opmaak, dan is dit bijna altijd de reden.</p>",
     "instruction": "",
     "_id": "c-605",
     "_parentId": "b-605",
@@ -1157,8 +1217,8 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Stap 3: publiceren",
-    "displayTitle": "Stap 3: publiceren",
+    "title": "Stap 2: publiceren",
+    "displayTitle": "Stap 2: publiceren",
     "body": "<div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>firebase deploy --only hosting</code></pre></div></div><p class=\"commando__na\">Na een halve minuut staat er \"Deploy complete!\" met daaronder je Hosting URL. Open die meteen even, ook op je telefoon.</p>",
     "instruction": "",
     "_id": "c-606",
@@ -1169,9 +1229,9 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Stap 4: vastleggen",
-    "displayTitle": "Stap 4: vastleggen",
-    "body": "<p>De wizard heeft bestanden gemaakt en je hebt dingen verplaatst. Leg dat vast, anders loopt je repository achter op wat er online staat.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>git add .\ngit commit -m &quot;Firebase Hosting ingericht en eerste versie gepubliceerd&quot;\ngit push</code></pre></div></div>",
+    "title": "Stap 3: vastleggen",
+    "displayTitle": "Stap 3: vastleggen",
+    "body": "<p>Er zijn bestanden bijgekomen en je pagina is verplaatst. Leg dat vast, anders loopt je repository achter op wat er online staat.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>git add .\ngit commit -m &quot;Firebase Hosting ingericht en eerste versie gepubliceerd&quot;\ngit push</code></pre></div></div><p class=\"commando__na\">Ook dit kun je in één zin aan je assistent vragen: leg vast en publiceer.</p>",
     "instruction": "",
     "_id": "c-607",
     "_parentId": "b-607",
@@ -1225,26 +1285,46 @@
     "_type": "component"
   },
   {
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Vier plekken om het neer te zetten",
+    "displayTitle": "Vier plekken om het neer te zetten",
+    "body": "<p>Firebase Hosting is niet de enige route, en het is goed om te weten wanneer je wat kiest. Deze vier zijn allemaal gratis en vragen geen betaalgegevens. Ze verschillen in wat ze kunnen drááien: alleen bestanden, of ook code.</p><p>De korte versie:</p><ul><li>Alleen een pagina, en hij mag openbaar &mdash; <b>GitHub Pages</b>.</li><li>Een pagina die ook gegevens bewaart &mdash; <b>Firebase Hosting</b>, wat we hier doen.</li><li>Je hebt echte servercode nodig, en het is je eigen project &mdash; <b>Vercel</b>.</li><li>Je wilt een draaiende server even uitproberen &mdash; <b>Render</b>.</li></ul><p>Kies er één en leer die goed. Wisselen halverwege kost je meer tijd dan het oplevert, en aan je opdrachtgever kun je toch niet uitleggen waarom het adres ineens anders is.</p>",
+    "instruction": "",
+    "_id": "c-611",
+    "_parentId": "b-611",
+    "_type": "component"
+  },
+  {
     "_component": "accordion",
     "_classes": "",
     "_layout": "full",
-    "title": "Had het ook met GitHub Pages gekund?",
-    "displayTitle": "Had het ook met GitHub Pages gekund?",
-    "body": "<p>Ja, en het is de moeite waard om te weten wanneer je wat kiest.</p>",
+    "title": "De vier naast elkaar",
+    "displayTitle": "De vier naast elkaar",
+    "body": "<p>Per optie: wat je krijgt, en waar hij ophoudt.</p>",
     "instruction": "Klik op een kop om die open te klappen.",
     "_shouldCollapseItems": false,
     "_items": [
       {
-        "title": "GitHub Pages",
-        "body": "<p>Gratis, en je hebt er geen tweede account voor nodig. Zet je bestanden in een map <code>docs</code>, en zet in de instellingen van je repository Pages aan op de branch main en die map. Klaar. Je adres wordt <code>jouwnaam.github.io/projectnaam</code>.</p><p>De beperking: het serveert alleen bestanden. Geen database, geen formulier dat iets bewaart. En de repository moet openbaar zijn, tenzij je een betaald plan hebt.</p>"
+        "title": "GitHub Pages — het snelst, als je alleen een pagina hebt",
+        "body": "<p>Je hebt er geen tweede account voor nodig: je code staat er al. Zet je bestanden in een map <code>docs</code>, en zet in de instellingen van je repository Pages aan op branch <code>main</code> en die map. Je adres wordt <code>jouwnaam.github.io/projectnaam</code>.</p><p><b>Waar het ophoudt:</b> het serveert alleen bestanden. Geen database, geen formulier dat iets bewaart, geen code die op een server draait. En op de gratis laag moet je repository openbaar zijn — bij gegevens van je opdrachtgever is dat meteen een probleem.</p>"
       },
       {
-        "title": "Firebase Hosting",
-        "body": "<p>Ook gratis, iets meer opzetwerk, maar je zit meteen naast Firestore. Dat is de reden dat we het hier gebruiken: in het volgende hoofdstuk gaan we gegevens opslaan, en dan heb je een backend nodig.</p><p>Bouw je alleen een pagina zonder formulier, dan is GitHub Pages sneller. Weet je nu al dat er iets bewaard moet worden, begin dan meteen hier.</p>"
+        "title": "Firebase Hosting — als er iets bewaard moet worden",
+        "body": "<p>Wat we in dit hoofdstuk doen. Iets meer opzetwerk, maar je zit meteen naast Firestore, en dat scheelt je in hoofdstuk 7 een hoop gedoe. Je repository mag gewoon privé blijven. Je krijgt preview-kanalen om iets voor te leggen zonder te publiceren.</p><p><b>Waar het ophoudt:</b> je eigen servercode draaien kan hier niet zonder Cloud Functions, en die vragen het betaalplan. Voor een formulier dat gegevens wegschrijft heb je dat niet nodig — de browser praat rechtstreeks met de database, beveiligd door de regels uit hoofdstuk 7.</p>"
+      },
+      {
+        "title": "Vercel — als je echte backendcode wilt",
+        "body": "<p>Je koppelt je GitHub-repository en Vercel publiceert bij elke push automatisch. Je krijgt een adres op <code>vercel.app</code>, en per pull request een eigen voorbeeldadres. Je kunt er serverless functies op draaien, dus je kunt echte backendcode kwijt zonder een server te beheren. Het gratis Hobby-plan vraagt geen betaalgegevens en stuurt je ook geen rekening: ga je over een grens, dan pauzeert dat onderdeel ongeveer een maand.</p><p><b>Let op, en dit is voor jullie relevant:</b> Hobby is volgens de voorwaarden alleen voor persoonlijke, niet-commerciële projecten. Bouw je iets voor een echte opdrachtgever die er zijn werk mee doet, dan wringt dat met die voorwaarden. Voor een prototype in je studie zit je goed; voor een product dat je oplevert en dat blijft draaien, kies je iets anders of overleg je het.</p>"
+      },
+      {
+        "title": "Render — om een echte server te testen",
+        "body": "<p>Statische sites zijn er gratis, en je kunt er ook een echte webservice draaien: Node, Python, wat je wilt, met een database ernaast. Geen betaalgegevens nodig. Dat maakt het de handigste plek om iets uit te proberen wat meer moet doen dan bestanden serveren.</p><p><b>Waar het ophoudt:</b> een gratis webservice valt na een kwartier zonder verkeer in slaap en doet er dan dertig tot zestig seconden over om wakker te worden. Wie erop klikt, kijkt zolang naar een lege pagina. Prima om zelf te testen of live iets te demonstreren, niet om een adres aan je opdrachtgever te geven. De gratis database verloopt bovendien na dertig dagen — zet daar niets in wat je nodig hebt.</p>"
       }
     ],
-    "_id": "c-611",
-    "_parentId": "b-611",
+    "_id": "c-612",
+    "_parentId": "b-612",
     "_type": "component"
   },
   {
@@ -1255,8 +1335,8 @@
     "displayTitle": "Oefening: jouw site online",
     "body": "<p>Publiceer je eigen pagina en vul dit in.</p><div class=\"canvas-groep\" data-laag=\"Oefening: jouw site online\"><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h06-url\">Wat is je Hosting-adres geworden?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h06-url\" name=\"h06-url\" rows=\"2\" placeholder=\"De .web.app-versie\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h06-telefoon\">Hoe ziet hij eruit op een telefoon?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h06-telefoon\" name=\"h06-telefoon\" rows=\"2\" placeholder=\"Echt even kijken, niet alleen het venster smal maken\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h06-verschil\">Wat is het verschil tussen git push en firebase deploy?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h06-verschil\" name=\"h06-verschil\" rows=\"2\" placeholder=\"In je eigen woorden\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h06-delen\">Deel je een preview of het echte adres? Waarom?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h06-delen\" name=\"h06-delen\" rows=\"2\" placeholder=\"Concept-cijfers horen niet op het open web\"></textarea></div></div>",
     "instruction": "",
-    "_id": "c-612",
-    "_parentId": "b-612",
+    "_id": "c-613",
+    "_parentId": "b-613",
     "_type": "component"
   },
   {
@@ -1267,8 +1347,8 @@
     "displayTitle": "Meenemen",
     "body": "<p>Zet je adres in je aantekeningen en stuur het nog niet rond. In hoofdstuk 8 staat de lijst die je eerst langsloopt.</p><div class=\"canvas-acties\"><button type=\"button\" class=\"btn-canvas js-canvas-kopieren\">Kopieer als tekst</button> <button type=\"button\" class=\"btn-canvas btn-canvas--stil js-canvas-wissen\">Wis mijn antwoorden</button><span class=\"canvas-melding js-canvas-melding\" role=\"status\" aria-live=\"polite\"></span></div>",
     "instruction": "",
-    "_id": "c-613",
-    "_parentId": "b-613",
+    "_id": "c-614",
+    "_parentId": "b-614",
     "_type": "component"
   },
   {
@@ -1318,8 +1398,8 @@
         "final": "<p>Nog niet helemaal.</p>"
       }
     },
-    "_id": "c-614",
-    "_parentId": "b-614",
+    "_id": "c-615",
+    "_parentId": "b-615",
     "_type": "component"
   },
   {
@@ -1330,8 +1410,8 @@
     "displayTitle": "",
     "body": "<div class=\"paginanav__rij\"><a class=\"paginanav__knop paginanav__knop--stil\" href=\"#/\"><span class=\"paginanav__label\">Terug naar</span><span class=\"paginanav__titel\">Overzicht</span></a><a class=\"paginanav__knop\" href=\"#/id/co-7\"><span class=\"paginanav__label\">Volgende onderdeel</span><span class=\"paginanav__titel\">De backend: antwoorden bewaren</span></a></div>",
     "instruction": "",
-    "_id": "c-615",
-    "_parentId": "b-615",
+    "_id": "c-616",
+    "_parentId": "b-616",
     "_type": "component"
   },
   {
@@ -1342,8 +1422,8 @@
     "displayTitle": "",
     "body": "<a class=\"terugnaar\" href=\"#/\"><span class=\"terugnaar__pijl\" aria-hidden=\"true\">&#8592;</span>Overzicht</a>",
     "instruction": "",
-    "_id": "c-717",
-    "_parentId": "b-717",
+    "_id": "c-720",
+    "_parentId": "b-720",
     "_type": "component"
   },
   {
@@ -1374,12 +1454,36 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Stappenplan: de database aanmaken",
-    "displayTitle": "Stappenplan: de database aanmaken",
-    "body": "<ol><li><b>Ga in de Firebase-console naar <i>Firestore Database</i></b> en klik op <i>Database maken</i>.</li><li><b>Kies een locatie in Europa</b>, bijvoorbeeld <code>eur3</code> of <code>europe-west4</code>. Je gegevens staan dan binnen de EU, wat je bij gegevens over mensen sowieso wilt. Let op: de locatie ligt daarna vast en is niet meer te wijzigen.</li><li><b>Kies <i>Beginnen in productiemodus</i></b>, niet testmodus. Alles zit dan dicht, en dat is precies goed: in de volgende stap zetten we exact één deurtje open.</li><li><b>Registreer je pagina als web-app.</b> Ga naar Projectinstellingen → <i>Jouw apps</i> → het <code>&lt;/&gt;</code>-icoon, geef hem een naam, en kopieer het configuratieblok dat je krijgt. Dat heb je zo nodig.</li></ol>",
+    "title": "Stappenplan: laat het klaarzetten",
+    "displayTitle": "Stappenplan: laat het klaarzetten",
+    "body": "<p>Drie dingen moeten er komen: een database, een geregistreerde web-app, en de instellingen van die app in je pagina. Alle drie via één prompt.</p><p>Merk op wat er hierdoor éók gebeurt: je krijgt de vraag over testmodus nooit te zien. Via de CLI maak je de database zonder standaardregels, en zet je er meteen je eigen regels op. Dat is niet alleen sneller maar ook veiliger.</p>",
     "instruction": "",
     "_id": "c-703",
     "_parentId": "b-703",
+    "_type": "component"
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Tekst",
+    "displayTitle": "",
+    "body": "<div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>Zet Firestore klaar voor dit project:\n- maak de database aan in de regio eur3 (Europa)\n- registreer een web-app met de naam Materialenpaspoort\n- schrijf de firebaseConfig van die app in public/firebase-config.js\n- maak een bestand firestore.rules en zet firestore in firebase.json\n\nPubliceer de regels nog niet: die schrijf ik zelf, in de volgende stap.\nLaat me zien welke commando’s je gebruikt en wat eruit komt.</code></pre></div></div><p class=\"commando__na\">De regio ligt na het aanmaken vast en is niet meer te wijzigen. eur3 is Europa; kies dat, zeker als er ooit gegevens over mensen in komen.</p>",
+    "instruction": "",
+    "_id": "c-704",
+    "_parentId": "b-704",
+    "_type": "component"
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Wat hij dan uitvoert",
+    "displayTitle": "Wat hij dan uitvoert",
+    "body": "<p>Drie commando’s. Het derde schrijft je instellingen weg naar een bestand, zodat je ze niet hoeft over te tikken.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>firebase firestore:databases:create &quot;(default)&quot; --location eur3\nfirebase apps:create WEB &quot;Materialenpaspoort&quot;\nfirebase apps:sdkconfig WEB --out public/firebase-config.js</code></pre></div></div><p class=\"commando__na\">Bestaat de database al, dan klaagt het eerste commando en kun je verder. Het derde geeft een bestand met je apiKey en project-id erin — dat mag gewoon mee in je repository, zie hieronder.</p>",
+    "instruction": "",
+    "_id": "c-705",
+    "_parentId": "b-705",
     "_type": "component"
   },
   {
@@ -1405,8 +1509,8 @@
         "body": "<p>Een <i>service account</i>-bestand — meestal een json met <code>private_key</code> erin. Dat geeft volledige toegang en omzeilt alle regels. Dat bestand hoort nooit in je pagina en nooit in een commit; het staat daarom al in je <code>.gitignore</code> uit hoofdstuk 5.</p><p>Voor deze cursus heb je het niet nodig. Stelt je assistent voor om er een te downloaden, vraag dan eerst waarom.</p>"
       }
     ],
-    "_id": "c-704",
-    "_parentId": "b-704",
+    "_id": "c-706",
+    "_parentId": "b-706",
     "_type": "component"
   },
   {
@@ -1417,8 +1521,8 @@
     "displayTitle": "De beveiligingsregels",
     "body": "<p>Dit is het belangrijkste stuk code van de hele cursus. Het zegt: op het laatje <code>meldingen</code> mag iedereen een briefje léggen, mits het er precies zo uitziet als afgesproken. Niemand mag briefjes lézen, wijzigen of weghalen — jij leest ze in de console, en die valt buiten deze regels. En al het andere in de database zit potdicht.</p>",
     "instruction": "",
-    "_id": "c-705",
-    "_parentId": "b-705",
+    "_id": "c-707",
+    "_parentId": "b-707",
     "_type": "component"
   },
   {
@@ -1427,10 +1531,22 @@
     "_layout": "full",
     "title": "Tekst",
     "displayTitle": "",
-    "body": "<p>Plak dit in de Firebase-console onder <i>Firestore Database</i> → <i>Regels</i>, en klik op <i>Publiceren</i>.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n\n    match /meldingen/{meldingId} {\n      // Aanmaken mag, mits het briefje er precies zo uitziet\n      allow create: if request.resource.data.keys()\n                       .hasOnly(['staat', 'toelichting', 'moment'])\n        &amp;&amp; request.resource.data.staat is string\n        &amp;&amp; request.resource.data.staat in ['goed', 'sleets', 'kapot']\n        &amp;&amp; request.resource.data.toelichting is string\n        &amp;&amp; request.resource.data.toelichting.size() &lt;= 500\n        &amp;&amp; request.resource.data.moment == request.time;\n\n      // Lezen, wijzigen en weggooien: door niemand, via de site\n      allow read, update, delete: if false;\n    }\n\n    // De rest van de database zit dicht\n    match /{document=**} {\n      allow read, write: if false;\n    }\n  }\n}</code></pre></div></div><p class=\"commando__na\">Pas de drie waarden goed, sleets en kapot aan naar jouw eigen opties, en 500 naar de maximale lengte die je wilt toestaan.</p>",
+    "body": "<p>Zet dit in <code>firestore.rules</code>, het bestand dat je assistent net heeft aangemaakt. Schrijf het zelf of laat het schrijven — maar lees het hoe dan ook regel voor regel door, want dit is het enige dat je database dicht houdt.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n\n    match /meldingen/{meldingId} {\n      // Aanmaken mag, mits het briefje er precies zo uitziet\n      allow create: if request.resource.data.keys()\n                       .hasOnly(['staat', 'toelichting', 'moment'])\n        &amp;&amp; request.resource.data.staat is string\n        &amp;&amp; request.resource.data.staat in ['goed', 'sleets', 'kapot']\n        &amp;&amp; request.resource.data.toelichting is string\n        &amp;&amp; request.resource.data.toelichting.size() &lt;= 500\n        &amp;&amp; request.resource.data.moment == request.time;\n\n      // Lezen, wijzigen en weggooien: door niemand, via de site\n      allow read, update, delete: if false;\n    }\n\n    // De rest van de database zit dicht\n    match /{document=**} {\n      allow read, write: if false;\n    }\n  }\n}</code></pre></div></div><p class=\"commando__na\">Pas de drie waarden goed, sleets en kapot aan naar jouw eigen opties, en 500 naar de maximale lengte die je wilt toestaan.</p>",
     "instruction": "",
-    "_id": "c-706",
-    "_parentId": "b-706",
+    "_id": "c-708",
+    "_parentId": "b-708",
+    "_type": "component"
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Regels publiceren",
+    "displayTitle": "Regels publiceren",
+    "body": "<p>Een bestand op je laptop doet niets. Pas als je ze publiceert, gelden ze op de server.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>firebase deploy --only firestore:rules</code></pre></div></div><p class=\"commando__na\">Vanaf nu horen je regels bij je code: ze staan in je repository, ze gaan mee in je commits, en je kunt terugzien wanneer je ze hebt gewijzigd. Dat lukt niet als je ze in de console plakt.</p>",
+    "instruction": "",
+    "_id": "c-709",
+    "_parentId": "b-709",
     "_type": "component"
   },
   {
@@ -1460,8 +1576,8 @@
         "body": "<p>Dit is de regel die je beschermt tegen het vervelendste scenario: bezoeker A die de antwoorden van bezoeker B kan opvragen. Jouw pagina hoeft ze niet te tonen, dus mag niemand ze ophalen.</p><p>Wil je later toch een overzicht op de site, dan is dat een ander gesprek — en dan komt Authentication erbij.</p>"
       }
     ],
-    "_id": "c-707",
-    "_parentId": "b-707",
+    "_id": "c-710",
+    "_parentId": "b-710",
     "_type": "component"
   },
   {
@@ -1470,10 +1586,10 @@
     "_layout": "full",
     "title": "Het formulier laten bouwen",
     "displayTitle": "Het formulier laten bouwen",
-    "body": "<p>Nu de regels staan, mag je assistent de code schrijven. Geef hem deze opdracht, en plak je eigen configuratieblok uit de console eronder.</p>",
+    "body": "<p>Nu de regels staan, mag je assistent de code schrijven. Je configuratiebestand staat er al, dus je hoeft niets over te tikken.</p>",
     "instruction": "",
-    "_id": "c-708",
-    "_parentId": "b-708",
+    "_id": "c-711",
+    "_parentId": "b-711",
     "_type": "component"
   },
   {
@@ -1482,10 +1598,10 @@
     "_layout": "full",
     "title": "Tekst",
     "displayTitle": "",
-    "body": "<div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>Voeg aan public/index.html onderaan een conditiemelding-formulier toe met:\n- een keuze uit drie waarden: goed, sleets of kapot\n- een tekstveld voor een toelichting, maximaal 500 tekens\n- een verzendknop, en een bevestiging na verzenden\n\nSla het op in Firestore in de collection &quot;meldingen&quot;, met precies de\nvelden staat, toelichting en moment. Gebruik serverTimestamp() voor\nmoment. Gebruik de modulaire web-SDK via de gstatic-CDN.\n\nVraag geen naam, geen e-mailadres en geen andere persoonsgegevens.\nZet mijn firebaseConfig erin zoals hieronder. Lees niets terug uit\nde database: de regels staan alleen aanmaken toe.\n\n&lt;hier plak je je eigen firebaseConfig uit de console&gt;</code></pre></div></div><p class=\"commando__na\">De laatste twee alinea’s zijn de belangrijkste. Zonder die instructies bouwt een assistent al snel een naamveld en een overzichtslijst erbij, en dan botst je pagina op je eigen regels — of erger, dan vraag je persoonsgegevens die je niet nodig hebt.</p>",
+    "body": "<div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>Voeg aan public/index.html onderaan een conditiemelding-formulier toe met:\n- een keuze uit drie waarden: goed, sleets of kapot\n- een tekstveld voor een toelichting, maximaal 500 tekens\n- een verzendknop, en een bevestiging na verzenden\n\nSla het op in Firestore in de collection &quot;meldingen&quot;, met precies de\nvelden staat, toelichting en moment. Gebruik serverTimestamp() voor\nmoment. Gebruik de modulaire web-SDK via de gstatic-CDN.\n\nVraag geen naam, geen e-mailadres en geen andere persoonsgegevens.\nGebruik de firebaseConfig uit public/firebase-config.js. Lees niets\nterug uit de database: de regels staan alleen aanmaken toe.</code></pre></div></div><p class=\"commando__na\">De laatste twee alinea’s zijn de belangrijkste. Zonder die instructies bouwt een assistent al snel een naamveld en een overzichtslijst erbij, en dan botst je pagina op je eigen regels — of erger, dan vraag je persoonsgegevens die je niet nodig hebt.</p>",
     "instruction": "",
-    "_id": "c-709",
-    "_parentId": "b-709",
+    "_id": "c-712",
+    "_parentId": "b-712",
     "_type": "component"
   },
   {
@@ -1496,8 +1612,8 @@
     "displayTitle": "Waar je op let in de code die je terugkrijgt",
     "body": "<p>Je hoeft het niet zelf te kunnen schrijven, wel te herkennen. Bovenaan het script hoort zoiets te staan.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>import { initializeApp } from\n  'https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js';\nimport { getFirestore, collection, addDoc, serverTimestamp } from\n  'https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js';</code></pre></div></div><p class=\"commando__na\">Het versienummer wisselt; neem dat over uit het snippet dat de console je geeft. Zie je in plaats hiervan getDocs of onSnapshot staan, dan probeert je pagina te lézen — dat gaat botsen met je regels, en dat is precies de bedoeling.</p>",
     "instruction": "",
-    "_id": "c-710",
-    "_parentId": "b-710",
+    "_id": "c-713",
+    "_parentId": "b-713",
     "_type": "component"
   },
   {
@@ -1508,8 +1624,8 @@
     "displayTitle": "Testen, publiceren en teruglezen",
     "body": "<p>Het formulier uit het voorbeeld laat zien hoe het eruit hoort te zien: drie duidelijke keuzes, één tekstveld met een tekenteller, en een bevestiging na verzenden. Bouw dat na, en houd het net zo klein.</p><p>Publiceer met <code>firebase deploy --only hosting</code>, open je site, en vul het formulier één keer in. Ga daarna in de console naar <i>Firestore Database</i> → tabblad <i>Gegevens</i>. Daar hoort je laatje <code>meldingen</code> te staan, met één briefje erin.</p><p>Doe daarna de tegenproef, want een regel die je niet hebt zien werken, weet je niet zeker. Vraag je assistent om in de browserconsole te proberen de meldingen op te halen. Dat hoort te mislukken met <i>Missing or insufficient permissions</i>. Krijg je wél gegevens terug, dan staan je regels nog open — ga terug naar de vorige stap.</p>",
     "instruction": "",
-    "_id": "c-711",
-    "_parentId": "b-711",
+    "_id": "c-714",
+    "_parentId": "b-714",
     "_type": "component"
   },
   {
@@ -1520,8 +1636,8 @@
     "displayTitle": "Vraag niets wat je niet nodig hebt",
     "body": "<p>Zodra je een naam of een e-mailadres vraagt, verwerk je persoonsgegevens. Dan gelden er regels: je moet kunnen uitleggen waarom je ze nodig hebt, wat je ermee doet en hoelang je ze bewaart. Voor een studieproject is dat zelden de moeite waard.</p><p>Heb je toch een reactie van een specifieke persoon nodig, vraag die dan per mail in plaats van via een openbaar formulier. En wil je het echt op de pagina: zet erbij wie je bent, waarvoor je het gebruikt en wanneer je het weggooit, en overleg het met je opdrachtgever en je docent.</p>",
     "instruction": "",
-    "_id": "c-712",
-    "_parentId": "b-712",
+    "_id": "c-715",
+    "_parentId": "b-715",
     "_type": "component"
   },
   {
@@ -1532,8 +1648,8 @@
     "displayTitle": "Oefening: jouw formulier",
     "body": "<p>Bouw het formulier voor je eigen pagina en controleer het daarna.</p><div class=\"canvas-groep\" data-laag=\"Oefening: jouw formulier\"><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h07-collection\">Hoe heet je collection, en welke velden zitten erin?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h07-collection\" name=\"h07-collection\" rows=\"2\" placeholder=\"Zo min mogelijk velden\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h07-opties\">Welke waarden staan er in je regels?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h07-opties\" name=\"h07-opties\" rows=\"2\" placeholder=\"Ze moeten precies matchen met je formulier\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h07-locatie\">In welke regio staat je database?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h07-locatie\" name=\"h07-locatie\" rows=\"2\" placeholder=\"Binnen de EU, en niet meer te wijzigen\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h07-lezen\">Wat gebeurde er bij de tegenproef?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h07-lezen\" name=\"h07-lezen\" rows=\"2\" placeholder=\"Hier hoort \"insufficient permissions\" te staan\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h07-persoons\">Vraag je persoonsgegevens? Zo ja, waarom is dat nodig?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h07-persoons\" name=\"h07-persoons\" rows=\"2\" placeholder=\"Het beste antwoord is nee\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h07-bewaren\">Hoelang bewaar je de meldingen, en wie ruimt ze op?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h07-bewaren\" name=\"h07-bewaren\" rows=\"2\" placeholder=\"Zet er een datum bij\"></textarea></div></div>",
     "instruction": "",
-    "_id": "c-713",
-    "_parentId": "b-713",
+    "_id": "c-716",
+    "_parentId": "b-716",
     "_type": "component"
   },
   {
@@ -1544,8 +1660,8 @@
     "displayTitle": "Meenemen",
     "body": "<p>Je hebt nu een werkende toepassing. In het laatste hoofdstuk loop je de lijst langs voordat je hem laat zien.</p><div class=\"canvas-acties\"><button type=\"button\" class=\"btn-canvas js-canvas-kopieren\">Kopieer als tekst</button> <button type=\"button\" class=\"btn-canvas btn-canvas--stil js-canvas-wissen\">Wis mijn antwoorden</button><span class=\"canvas-melding js-canvas-melding\" role=\"status\" aria-live=\"polite\"></span></div>",
     "instruction": "",
-    "_id": "c-714",
-    "_parentId": "b-714",
+    "_id": "c-717",
+    "_parentId": "b-717",
     "_type": "component"
   },
   {
@@ -1595,8 +1711,8 @@
         "final": "<p>Nog niet helemaal.</p>"
       }
     },
-    "_id": "c-715",
-    "_parentId": "b-715",
+    "_id": "c-718",
+    "_parentId": "b-718",
     "_type": "component"
   },
   {
@@ -1607,8 +1723,8 @@
     "displayTitle": "",
     "body": "<div class=\"paginanav__rij\"><a class=\"paginanav__knop paginanav__knop--stil\" href=\"#/\"><span class=\"paginanav__label\">Terug naar</span><span class=\"paginanav__titel\">Overzicht</span></a><a class=\"paginanav__knop\" href=\"#/id/co-8\"><span class=\"paginanav__label\">Volgende onderdeel</span><span class=\"paginanav__titel\">Controleren en opleveren</span></a></div>",
     "instruction": "",
-    "_id": "c-716",
-    "_parentId": "b-716",
+    "_id": "c-719",
+    "_parentId": "b-719",
     "_type": "component"
   },
   {

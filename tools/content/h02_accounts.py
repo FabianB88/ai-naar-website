@@ -47,25 +47,26 @@ def bouw(p):
         '<p>Vijf minuten nu. Print ze, of zet ze in je wachtwoordmanager.</p>')
 
     p.tekst(
-        'Stappenplan: Firebase-project aanmaken',
-        '<p>Firebase draait op een Google-account. Heb je er al een, dan kun je die '
-        'gebruiken — een privé-account, niet je HAN-account.</p>'
-        '<ol>'
-        '<li><b>Ga naar <a href="https://console.firebase.google.com" target="_blank" '
-        'rel="noopener">console.firebase.google.com</a></b> en log in met je '
-        'Google-account.</li>'
-        '<li><b>Klik op <i>Project toevoegen</i></b> en geef het een naam die je '
-        'terugkent, bijvoorbeeld <code>materialenpaspoort-w3</code>. Firebase maakt '
-        'daar een project-id van door er zo nodig een paar tekens achter te plakken. '
-        'Schrijf die id op: die heb je in hoofdstuk 4 nodig, en hij staat ook in je '
-        'webadres.</li>'
-        '<li><b>Zet Google Analytics uit.</b> Je hebt het niet nodig, het vraagt om een '
-        'extra akkoord, en het verzamelt gegevens over je bezoekers die je voor dit '
-        'project niet wilt hebben.</li>'
-        '<li><b>Wacht tot het project klaar is</b> en klik door naar het overzicht.</li>'
-        '<li><b>Controleer linksonder welk plan er staat.</b> Daar hoort <b>Spark</b> te '
-        'staan, het gratis plan. Zo niet, dan zit je in het verkeerde project.</li>'
-        '</ol>')
+        'En een Google-account voor Firebase',
+        '<p>Firebase draait op een Google-account. Heb je er een, dan ben je klaar — een '
+        'privé-account, niet je HAN-account. Zo niet, maak er dan een aan op '
+        '<a href="https://accounts.google.com/signup" target="_blank" '
+        'rel="noopener">accounts.google.com</a>.</p>'
+        '<p>Meer hoef je hier niet te doen. Het <b>project</b> zelf maak je niet met de '
+        'hand aan in de console: dat doet je assistent straks met één commando, zodra '
+        'je in hoofdstuk 4 bent ingelogd. Dat scheelt je een wizard met vragen waar je '
+        'toch moet gokken, en je houdt de naam en de instellingen in je eigen '
+        'aantekeningen in plaats van in een browsertabblad.</p>')
+
+    p.aandacht(
+        'Dit zijn de enige twee dingen die je met de hand doet',
+        '<p>Accounts aanmaken kan een assistent niet voor je doen, en dat hoort ook niet: '
+        'er komt een e-mailbevestiging aan te pas, een CAPTCHA, en een code op je '
+        'telefoon. Alles wat daarná komt — projecten, databases, instellingen, '
+        'publiceren — gaat via een prompt.</p>'
+        '<p>Kom je later in deze cursus een instructie tegen om ergens in een console te '
+        'gaan klikken, dan staat erbij waarom dat niet anders kan. Dat gebeurt precies '
+        'twee keer, en allebei alleen om ergens naar te <i>kijken</i>.</p>')
 
     p.accordeon(
         'Wat je in de console beter laat staan',
@@ -114,15 +115,16 @@ def bouw(p):
              'Je eigen adres, niet je schooladres'),
             ('h02-2fa', 'Waar staan je GitHub-herstelcodes?',
              'Niet alleen op je telefoon'),
-            ('h02-project', 'Je Firebase-project-id', 'Let op: id, niet de naam'),
-            ('h02-plan', 'Welk plan staat er linksonder in de console?',
-             'Hier hoort Spark te staan'),
+            ('h02-google', 'Met welk Google-account ga je Firebase gebruiken?',
+             'Privé, en onthoud welke als je er meerdere hebt'),
+            ('h02-naam', 'Hoe wil je je Firebase-project noemen?',
+             'Kleine letters en streepjes; je assistent maakt hem in hoofdstuk 4'),
         ])
 
     p.knoppenrij(
         'Meenemen',
-        '<p>Zet je project-id apart; je typt hem in hoofdstuk 4 en 6 nog een paar '
-        'keer.</p>')
+        '<p>Twee accounts, meer niet. In het volgende hoofdstuk laat je je assistent '
+        'het gereedschap installeren.</p>')
 
     p.vraag(
         'Even checken',
