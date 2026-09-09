@@ -23,11 +23,15 @@ function tekstVanBlok(knop) {
 
 function terugmelden(knop, gelukt) {
   const origineel = knop.dataset.origineel || knop.textContent;
+  const doel = knop.dataset.doel || '';
   knop.dataset.origineel = origineel;
-  knop.textContent = gelukt ? 'Gekopieerd' : 'Kopiëren mislukt';
+  const nu = gelukt ? 'Gekopieerd' : 'Kopiëren mislukt';
+  knop.textContent = nu;
+  knop.setAttribute('aria-label', doel ? nu + ': ' + doel : nu);
   knop.classList.toggle('is-gekopieerd', gelukt);
   window.setTimeout(() => {
     knop.textContent = origineel;
+    knop.setAttribute('aria-label', doel ? origineel + ': ' + doel : origineel);
     knop.classList.remove('is-gekopieerd');
   }, MELDING_MS);
 }

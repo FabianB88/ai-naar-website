@@ -165,9 +165,9 @@ def bouw(p):
         '<p>Een werkende <code>index.html</code> uit hulpmiddel 15. Heb je die nog '
         'niet, doe dan eerst dat hulpmiddel — deze cursus gaat over publiceren, niet '
         'over ontwerpen.</p>'
-        '<p>Verder: je ingevulde mini-briefing, je onderbouwing uit hulpmiddel 09, en '
+        '<p>Verder: je ingevulde mini-briefing, je onderbouwing uit hulpmiddel 05, en '
         'toestemming van je opdrachtgever als er gegevens van hem op de pagina komen '
-        '(hulpmiddel 06). Dat laatste regel je nú, niet als de pagina al online '
+        '(hulpmiddel 09). Dat laatste regel je nú, niet als de pagina al online '
         'staat.</p>')
 
     p.invulvelden(

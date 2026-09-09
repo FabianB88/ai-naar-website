@@ -130,7 +130,7 @@ def bouw(p):
             {'title': 'Wat je opdrachtgever eigenlijk moet weten',
              'body': '<p>Dat de code op GitHub staat, of hij openbaar is, en wat er '
                      'aan gegevens in zit. Dat is een gesprek van twee minuten '
-                     '(hulpmiddel 06) en het voorkomt het ongemakkelijke moment '
+                     '(hulpmiddel 09) en het voorkomt het ongemakkelijke moment '
                      'waarop hij het zelf ontdekt.</p>'},
         ])
 

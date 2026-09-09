@@ -152,11 +152,12 @@ class Pagina:
             return ('<div class="commando__blok">'
                     '<div class="commando__balk">'
                     '<span class="commando__label">%s</span>'
-                    '<button type="button" class="commando__kopieer js-commando-kopieren">'
+                    '<button type="button" class="commando__kopieer js-commando-kopieren" '
+                    'data-doel="%s" aria-label="Kopi&euml;ren: %s">'
                     'Kopi&euml;ren</button>'
                     '</div>'
                     '<pre class="commando__code"><code>%s</code></pre>'
-                    '</div>' % (label, veilig))
+                    '</div>' % (label, label, label, veilig))
 
         if beide:
             blokken = blok('Windows en macOS', beide)
