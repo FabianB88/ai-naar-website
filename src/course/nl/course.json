@@ -1,0 +1,62 @@
+{
+  "_id": "course",
+  "_type": "course",
+  "_courseId": "ai-naar-website",
+  "title": "AI naar website",
+  "displayTitle": "AI naar website",
+  "subtitle": "Van één HTML-bestand naar een gepubliceerde site met een backend",
+  "description": "Minor Circulaire Economie",
+  "body": "Hulpmiddel 15 brengt je tot een werkende pagina op je eigen laptop. Deze cursus brengt hem online, met versiegeschiedenis en met een database eronder die antwoorden van bezoekers bewaart. Je laat Claude Code of Codex het meeste werk doen en leert precies welke drie stappen je zelf moet zetten. Alles gratis en zonder betaalgegevens.",
+  "instruction": "",
+  "_buttons": {
+    "_submit": {
+      "buttonText": "Nakijken",
+      "ariaLabel": "Kijk mijn antwoord na"
+    },
+    "_reset": {
+      "buttonText": "Opnieuw",
+      "ariaLabel": "Probeer deze vraag opnieuw"
+    },
+    "_showCorrectAnswer": {
+      "buttonText": "Toon antwoord",
+      "ariaLabel": "Toon het juiste antwoord"
+    },
+    "_hideCorrectAnswer": {
+      "buttonText": "Mijn antwoord",
+      "ariaLabel": "Toon mijn eigen antwoord"
+    },
+    "_showFeedback": {
+      "buttonText": "Toelichting",
+      "ariaLabel": "Toon de toelichting"
+    }
+  },
+  "_globals": {
+    "_menu": {
+      "_boxMenu": {
+        "durationLabel": "Tijd:"
+      }
+    },
+    "_accessibility": {
+      "_ariaLabels": {
+        "skipNavigation": "Ga direct naar de inhoud",
+        "navigation": "Hoofdnavigatie",
+        "previous": "Vorige",
+        "next": "Volgende",
+        "close": "Sluiten",
+        "closeDrawer": "Sluit het zijpaneel",
+        "drawer": "Extra informatie",
+        "complete": "Afgerond",
+        "incomplete": "Nog niet afgerond",
+        "correct": "Goed",
+        "incorrect": "Fout",
+        "selectedAnswer": "gekozen",
+        "unselectedAnswer": "niet gekozen",
+        "answeredIncorrectly": "Je antwoord was fout",
+        "answeredCorrectly": "Je antwoord was goed",
+        "selectAnswer": "Kies een antwoord",
+        "done": "Klaar"
+      }
+    }
+  },
+  "_latestTrackingId": 113
+}

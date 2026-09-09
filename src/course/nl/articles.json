@@ -1,0 +1,112 @@
+[
+  {
+    "_id": "a-1",
+    "_parentId": "co-1",
+    "_type": "article",
+    "_classes": "",
+    "title": "Waar hulpmiddel 15 ophoudt",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-2",
+    "_parentId": "co-2",
+    "_type": "article",
+    "_classes": "",
+    "title": "Twee accounts aanmaken",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-3",
+    "_parentId": "co-3",
+    "_type": "article",
+    "_classes": "",
+    "title": "Git, Node en de twee CLI’s",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-4",
+    "_parentId": "co-4",
+    "_type": "article",
+    "_classes": "",
+    "title": "Koppelen: de drie inlogmomenten",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-5",
+    "_parentId": "co-5",
+    "_type": "article",
+    "_classes": "",
+    "title": "Je pagina in een repository",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-6",
+    "_parentId": "co-6",
+    "_type": "article",
+    "_classes": "",
+    "title": "Publiceren op een echt adres",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-7",
+    "_parentId": "co-7",
+    "_type": "article",
+    "_classes": "",
+    "title": "De backend: antwoorden bewaren",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-8",
+    "_parentId": "co-8",
+    "_type": "article",
+    "_classes": "",
+    "title": "Controleren en opleveren",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_assessment": {
+      "_isEnabled": true,
+      "_id": "kennischeck-ai-naar-website",
+      "_questions": {
+        "_resetType": "soft",
+        "_canShowFeedback": true
+      },
+      "_scoreToPass": 75,
+      "_isPercentageBased": true,
+      "_includeInTotalScore": true,
+      "_assessmentWeight": 1,
+      "_attempts": "infinite",
+      "_allowResetIfPassed": true,
+      "_banks": {
+        "_isEnabled": false
+      },
+      "_randomisation": {
+        "_isEnabled": false
+      }
+    }
+  },
+  {
+    "_id": "a-8-uitslag",
+    "_parentId": "co-8",
+    "_type": "article",
+    "_classes": "",
+    "title": "Uitslag",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  }
+]
