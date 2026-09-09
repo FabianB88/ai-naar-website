@@ -77,7 +77,7 @@ def bouw(p):
         'Controleren',
         '<p>Terug in je terminal.</p>',
         beide='gh auth status',
-        na='Je ziet dan "Logged in to github.com account <jouw naam>". Staat daar iets '
+        na='Je ziet dan "Logged in to github.com account" met je gebruikersnaam erachter. Staat daar iets '
            'anders, dan ben je in de browser met het verkeerde account ingelogd — dat '
            'gebeurt vaker dan je denkt als je nog een schoolaccount open hebt staan.')
 
@@ -204,8 +204,9 @@ def bouw(p):
 
     p.knoppenrij(
         'Meenemen',
-        '<p>Werken beide controlecommando’s en staat je project er? Dan is alle '
-        'voorbereiding klaar, en heb je voor het laatst iets met de hand gedaan.</p>')
+        '<p>Werken beide controlecommando’s en staat je project er? Dan is de voorbereiding '
+        'klaar. Er komt nog één handeling in de console, in hoofdstuk 7, en verder gaat '
+        'alles via prompts.</p>')
 
     p.vraag(
         'Even checken',

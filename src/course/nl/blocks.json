@@ -979,7 +979,7 @@
     "_trackingId": 88
   },
   {
-    "_id": "b-720",
+    "_id": "b-722",
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "terugnaar-blok",
@@ -1016,7 +1016,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Stappenplan: laat het klaarzetten",
+    "title": "Stap 1: de database aanmaken — dit is het klikwerk",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1027,7 +1027,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Tekst",
+    "title": "Waarom dit de derde en laatste keer handwerk is",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1038,7 +1038,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Wat hij dan uitvoert",
+    "title": "Stap 2: de rest via een prompt",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1049,7 +1049,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Die apiKey in je config is geen wachtwoord",
+    "title": "Tekst",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1060,7 +1060,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "De beveiligingsregels",
+    "title": "Wat hij dan uitvoert",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1071,7 +1071,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Tekst",
+    "title": "Die apiKey in je config is geen wachtwoord",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1082,7 +1082,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Regels publiceren",
+    "title": "De beveiligingsregels",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1093,7 +1093,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Wat elke regel tegenhoudt",
+    "title": "Tekst",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1104,7 +1104,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Het formulier laten bouwen",
+    "title": "Regels publiceren",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1115,7 +1115,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Tekst",
+    "title": "Wat elke regel tegenhoudt",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1126,7 +1126,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Waar je op let in de code die je terugkrijgt",
+    "title": "Het formulier laten bouwen",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1137,7 +1137,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Testen, publiceren en teruglezen",
+    "title": "Tekst",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1148,7 +1148,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Vraag niets wat je niet nodig hebt",
+    "title": "Waar je op let in de code die je terugkrijgt",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1159,7 +1159,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Oefening: jouw formulier",
+    "title": "Testen, publiceren en teruglezen",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1170,7 +1170,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Meenemen",
+    "title": "Vraag niets wat je niet nodig hebt",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1181,7 +1181,7 @@
     "_parentId": "a-7",
     "_type": "block",
     "_classes": "separator",
-    "title": "Even checken",
+    "title": "Oefening: jouw formulier",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -1191,12 +1191,34 @@
     "_id": "b-719",
     "_parentId": "a-7",
     "_type": "block",
+    "_classes": "separator",
+    "title": "Meenemen",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_trackingId": 108
+  },
+  {
+    "_id": "b-720",
+    "_parentId": "a-7",
+    "_type": "block",
+    "_classes": "separator",
+    "title": "Even checken",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_trackingId": 109
+  },
+  {
+    "_id": "b-721",
+    "_parentId": "a-7",
+    "_type": "block",
     "_classes": "separator paginanav",
     "title": "Tekst",
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 108
+    "_trackingId": 110
   },
   {
     "_id": "b-813",
@@ -1207,7 +1229,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 109
+    "_trackingId": 111
   },
   {
     "_id": "b-801",
@@ -1218,7 +1240,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 110
+    "_trackingId": 112
   },
   {
     "_id": "b-802",
@@ -1229,7 +1251,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 111
+    "_trackingId": 113
   },
   {
     "_id": "b-803",
@@ -1240,7 +1262,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 112
+    "_trackingId": 114
   },
   {
     "_id": "b-804",
@@ -1251,7 +1273,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 113
+    "_trackingId": 115
   },
   {
     "_id": "b-805",
@@ -1262,7 +1284,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 114
+    "_trackingId": 116
   },
   {
     "_id": "b-806",
@@ -1273,7 +1295,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 115
+    "_trackingId": 117
   },
   {
     "_id": "b-807",
@@ -1284,7 +1306,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 116
+    "_trackingId": 118
   },
   {
     "_id": "b-808",
@@ -1295,7 +1317,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 117
+    "_trackingId": 119
   },
   {
     "_id": "b-809",
@@ -1306,7 +1328,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 118
+    "_trackingId": 120
   },
   {
     "_id": "b-810",
@@ -1317,7 +1339,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 119
+    "_trackingId": 121
   },
   {
     "_id": "b-811",
@@ -1328,7 +1350,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 120
+    "_trackingId": 122
   },
   {
     "_id": "b-812",
@@ -1339,7 +1361,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 121
+    "_trackingId": 123
   },
   {
     "_id": "b-8001",
@@ -1350,6 +1372,6 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 122
+    "_trackingId": 124
   }
 ]

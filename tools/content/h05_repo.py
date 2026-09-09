@@ -98,7 +98,7 @@ def bouw(p):
             'git commit -m "Eerste versie van de one-pager uit hulpmiddel 15"',
         ],
         na='Schrijf in de boodschap wát er veranderd is, niet dát er iets veranderd is. '
-           '"Aanbeveling boven de tabel gezet" helpt je over drie weken; "update" niet.')
+           '"Demontagestappen toegevoegd" helpt je over drie weken; "update" niet.')
 
     p.commando(
         'Stap 5: op GitHub zetten',

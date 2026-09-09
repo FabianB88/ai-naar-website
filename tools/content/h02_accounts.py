@@ -65,8 +65,9 @@ def bouw(p):
         'telefoon. Alles wat daarná komt — projecten, databases, instellingen, '
         'publiceren — gaat via een prompt.</p>'
         '<p>Kom je later in deze cursus een instructie tegen om ergens in een console te '
-        'gaan klikken, dan staat erbij waarom dat niet anders kan. Dat gebeurt precies '
-        'twee keer, en allebei alleen om ergens naar te <i>kijken</i>.</p>')
+        'gaan klikken, dan staat erbij waarom dat niet anders kan. Dat gebeurt nog '
+        'één keer, in hoofdstuk 7: de allereerste database van een project laat zich '
+        'niet vanaf de opdrachtregel aanmaken.</p>')
 
     p.accordeon(
         'Wat je in de console beter laat staan',

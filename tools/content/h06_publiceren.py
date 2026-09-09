@@ -102,7 +102,7 @@ def bouw(p):
         'keer voor je doen als je zegt: leg vast en publiceer.</p>',
         beide=[
             'git add .',
-            'git commit -m "Aanbeveling boven de tabel gezet"',
+            'git commit -m "Demontagestappen toegevoegd"',
             'git push',
             'firebase deploy --only hosting',
         ])
@@ -137,7 +137,7 @@ def bouw(p):
         'Vier plekken om het neer te zetten',
         '<p>Firebase Hosting is niet de enige route, en het is goed om te weten wanneer '
         'je wat kiest. Deze vier zijn allemaal gratis en vragen geen betaalgegevens. Ze '
-        'verschillen in wat ze kunnen drááien: alleen bestanden, of ook code.</p>'
+        'verschillen in wat ze kunnen dráaien: alleen bestanden, of ook code.</p>'
         '<p>De korte versie:</p>'
         '<ul>'
         '<li>Alleen een pagina, en hij mag openbaar &mdash; <b>GitHub Pages</b>.</li>'

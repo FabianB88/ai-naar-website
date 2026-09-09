@@ -13,8 +13,8 @@ def bouw(p):
         '<i>collection</i> — bevat losse briefjes, en elk briefje is een '
         '<i>document</i> met velden erin. Voor ons project is er één laatje, '
         '<code>meldingen</code>, met per conditiemelding één briefje.</p>'
-        '<p>We bouwen het voorbeeld af. Wie de stoel beheert, meldt op de pagina in '
-        'welke staat hij is — goed, sleets of kapot — en zet er één zin bij. Dat komt '
+        '<p>We bouwen het voorbeeld af. Wie het product beheert, meldt op de pagina in '
+        'welke staat het is — goed, sleets of kapot — en zet er één zin bij. Dat komt '
         'in Firestore te staan, en jij leest het terug in de console. Zo blijft het '
         'paspoort kloppen zonder dat iemand een bestand hoeft bij te werken.</p>')
 
@@ -25,45 +25,74 @@ def bouw(p):
         '<p>Firestore vraagt bij het aanmaken of je in <i>testmodus</i> wilt beginnen. '
         'Dat betekent: iedereen mag alles lezen, schrijven en weggooien, dertig dagen '
         'lang, en daarna gaat je site stuk omdat de regels verlopen. Kies het niet, ook '
-        'niet "even om te proberen". Het kost je hieronder twee minuten om het meteen '
-        'goed te doen.</p>')
+        'niet "even om te proberen". Kies <b>productiemodus</b>: dan zit alles dicht, en '
+        'zet je hieronder zelf precies \u00e9\u00e9n deurtje open.</p>')
 
     p.tekst(
-        'Stappenplan: laat het klaarzetten',
-        '<p>Drie dingen moeten er komen: een database, een geregistreerde web-app, en de '
-        'instellingen van die app in je pagina. Alle drie via één prompt.</p>'
-        '<p>Merk op wat er hierdoor éók gebeurt: je krijgt de vraag over testmodus '
-        'nooit te zien. Via de CLI maak je de database zonder standaardregels, en zet je '
-        'er meteen je eigen regels op. Dat is niet alleen sneller maar ook veiliger.</p>')
+        'Stap 1: de database aanmaken \u2014 dit is het klikwerk',
+        '<p>Hier houdt het automatiseren even op, en dat is geen slordigheid van deze '
+        'cursus. De Firebase CLI kan w\u00e9l extra databases aanmaken, maar '
+        '<b>niet de eerste</b>: de database die <code>(default)</code> heet, moet via de '
+        'console of via de Google Cloud CLI. Die laatste is een extra installatie voor '
+        '\u00e9\u00e9n handeling, dus we doen het in de console.</p>'
+        '<p>Vier klikken, twee minuten, en je komt er nooit meer terug.</p>'
+        '<ol>'
+        '<li>Ga naar de '
+        '<a href="https://console.firebase.google.com" target="_blank" '
+        'rel="noopener">Firebase-console</a> en open je project uit hoofdstuk 4.</li>'
+        '<li>Klik links op <i>Firestore Database</i> en daarna op <i>Database '
+        'maken</i>.</li>'
+        '<li>Kies als locatie <code>eur3</code> of <code>europe-west4</code>. Je '
+        'gegevens staan dan binnen de EU. <b>Let op:</b> de locatie ligt daarna vast en '
+        'is niet meer te wijzigen.</li>'
+        '<li>Kies <b>Beginnen in productiemodus</b>. Niet testmodus, zie hierboven.</li>'
+        '</ol>')
+
+    p.aandacht(
+        'Waarom dit de derde en laatste keer handwerk is',
+        '<p>In hoofdstuk 2 stond dat je twee dingen met de hand doet: je accounts. Dit is '
+        'de derde, en de enige die erbij is gekomen omdat de techniek het niet anders '
+        'toelaat.</p>'
+        '<p>Kom je in een handleiding tegen dat het w\u00e9l met '
+        '<code>firebase firestore:databases:create</code> kan, dan gaat die over een '
+        '<i>extra</i> database naast de eerste. Voor de eerste werkt hij niet. Laat je '
+        'assistent het ook niet blijven proberen \u2014 dat kost je tien minuten aan '
+        'foutmeldingen.</p>')
+
+    p.tekst(
+        'Stap 2: de rest via een prompt',
+        '<p>Nu de database er staat, kan je assistent het afmaken: de web-app '
+        'registreren, de instellingen ophalen, en de bestanden klaarzetten waar je '
+        'regels in komen.</p>')
 
     p.commando(
         '',
         '',
         beide=[
-            'Zet Firestore klaar voor dit project:',
-            '- maak de database aan in de regio eur3 (Europa)',
+            'De Firestore-database bestaat al. Doe nu het volgende:',
             '- registreer een web-app met de naam Materialenpaspoort',
-            '- schrijf de firebaseConfig van die app in public/firebase-config.js',
-            '- maak een bestand firestore.rules en zet firestore in firebase.json',
+            '- haal de firebaseConfig op en zet die in public/index.html, in',
+            '  modulaire vorm: const firebaseConfig = { ... }',
+            '- maak een leeg bestand firestore.rules en zet firestore in',
+            '  firebase.json zodat het naar dat bestand wijst',
             '',
-            'Publiceer de regels nog niet: die schrijf ik zelf, in de volgende stap.',
-            'Laat me zien welke commando’s je gebruikt en wat eruit komt.',
+            'Publiceer de regels nog niet: die schrijf ik zelf, hieronder.',
+            'Laat me zien welke commando\u2019s je gebruikt en wat eruit komt.',
         ],
-        na='De regio ligt na het aanmaken vast en is niet meer te wijzigen. eur3 is '
-           'Europa; kies dat, zeker als er ooit gegevens over mensen in komen.')
+        na='Let op de derde regel: vraag om de modulaire vorm. Het commando hieronder '
+           'geeft de config namelijk in de oude schrijfwijze terug, en die past niet bij '
+           'de imports die je verderop gebruikt.')
 
     p.commando(
         'Wat hij dan uitvoert',
-        '<p>Drie commando’s. Het derde schrijft je instellingen weg naar een bestand, '
-        'zodat je ze niet hoeft over te tikken.</p>',
+        '<p>Twee commando\u2019s. Het tweede drukt je instellingen af.</p>',
         beide=[
-            'firebase firestore:databases:create "(default)" --location eur3',
             'firebase apps:create WEB "Materialenpaspoort"',
-            'firebase apps:sdkconfig WEB --out public/firebase-config.js',
+            'firebase apps:sdkconfig WEB',
         ],
-        na='Bestaat de database al, dan klaagt het eerste commando en kun je verder. '
-           'Het derde geeft een bestand met je apiKey en project-id erin — dat mag '
-           'gewoon mee in je repository, zie hieronder.')
+        na='De uitvoer is een blok in de stijl firebase.initializeApp({ ... }) \u2014 de '
+           'oude, niet-modulaire schrijfwijze. De waarden erin kloppen; alleen de vorm '
+           'eromheen moet anders. Daarom staat dat in de prompt.')
 
     p.accordeon(
         'Die apiKey in je config is geen wachtwoord',
@@ -179,8 +208,8 @@ def bouw(p):
 
     p.tekst(
         'Het formulier laten bouwen',
-        '<p>Nu de regels staan, mag je assistent de code schrijven. Je '
-        'configuratiebestand staat er al, dus je hoeft niets over te tikken.</p>')
+        '<p>Nu de regels staan, mag je assistent de code schrijven. Je firebaseConfig zit '
+        'al in je pagina, dus daar hoef je niets meer aan te doen.</p>')
 
     p.commando(
         '',
@@ -196,7 +225,7 @@ def bouw(p):
             'moment. Gebruik de modulaire web-SDK via de gstatic-CDN.',
             '',
             'Vraag geen naam, geen e-mailadres en geen andere persoonsgegevens.',
-            'Gebruik de firebaseConfig uit public/firebase-config.js. Lees niets',
+            'Gebruik de firebaseConfig die al in de pagina staat. Lees niets',
             'terug uit de database: de regels staan alleen aanmaken toe.',
         ],
         na='De laatste twee alinea’s zijn de belangrijkste. Zonder die instructies '
@@ -214,10 +243,10 @@ def bouw(p):
             "import { getFirestore, collection, addDoc, serverTimestamp } from",
             "  'https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js';",
         ],
-        na='Het versienummer wisselt; neem dat over uit het snippet dat de console je '
-           'geeft. Zie je in plaats hiervan getDocs of onSnapshot staan, dan probeert '
-           'je pagina te lézen — dat gaat botsen met je regels, en dat is precies de '
-           'bedoeling.')
+        na='Het versienummer wisselt; neem het over uit wat je assistent gebruikt. Zie je '
+           'in plaats hiervan getDocs of onSnapshot staan, dan probeert je pagina te '
+           'lézen. Dat loopt stuk op je eigen regels — wat op zich goed nieuws is, want '
+           'het bewijst dat ze werken. Haal het eruit.')
 
     p.tekst(
         'Testen, publiceren en teruglezen',

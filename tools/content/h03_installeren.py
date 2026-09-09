@@ -84,7 +84,7 @@ def bouw(p):
             'firebase --version',
         ],
         na='Je ziet dan zoiets als git version 2.55.0, v24.19.0, gh version 2.100.0 '
-           'en 14.x.x. De exacte nummers doen er niet toe, als er maar een nummer '
+           'en 15.13.0. De exacte nummers doen er niet toe, als er maar een nummer '
            'staat.')
 
     p.accordeon(

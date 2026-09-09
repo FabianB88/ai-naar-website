@@ -115,7 +115,7 @@ def bouw(p):
             ('Door het te proberen: vraag de meldingen op vanuit de browser en '
              'controleer dat je een permissiefout terugkrijgt.', True),
             ('Doordat de regels zonder foutmelding gepubliceerd zijn.', False),
-            ('Doordat je pagina de reacties nergens laat zien.', False),
+            ('Doordat je pagina de meldingen nergens laat zien.', False),
             ('Doordat je repository op privé staat.', False),
         ],
         feedback={

@@ -39,9 +39,10 @@ def bouw(p):
     p.tekst(
         'Wat je aan het eind hebt',
         '<p>Het voorbeeld door de hele cursus heen is een <b>materialenpaspoort</b>: '
-        'één pagina die van een product laat zien waar het van gemaakt is, hoe je '
+        'een pagina die van een product laat zien waar het van gemaakt is, hoe je '
         'het uit elkaar haalt, en waar de onderdelen heen gaan als het niet meer '
-        'gebruikt wordt. Wij nemen een bureaustoel.</p>'
+        'gebruikt wordt. Jij bouwt er één; in het voorbeeld hieronder staan er vijf, '
+        'zodat je ziet hoe het eruitziet als er een overzicht omheen komt.</p>'
         '<p>Dat is geen willekeurig onderwerp. Een paspoort is pas iets waard als het '
         'meebeweegt met het product: wie hem over vijf jaar in handen heeft, moet '
         'kunnen melden in welke staat hij is. Daar heb je een database voor nodig, en '
@@ -54,9 +55,9 @@ def bouw(p):
         '<li><b>Live op een echt webadres</b>, iets als '
         '<code>materialenpaspoort-w3.web.app</code>, dat je in een mail kunt '
         'zetten of achter een QR-code op het product zelf.</li>'
-        '<li><b>Uitgebreid met een conditiemelding.</b> Wie de stoel beheert, meldt in '
-        'welke staat hij is en wat eraan mankeert; dat komt in een database te staan '
-        'die alleen jij kunt lezen.</li>'
+        '<li><b>Uitgebreid met een conditiemelding.</b> Wie het product beheert, meldt '
+        'in welke staat het is en wat eraan mankeert; dat komt in een database te '
+        'staan die alleen jij kunt lezen.</li>'
         '</ul>'
         '<p>Dat laatste is het punt waarop je van een <i>pagina</i> naar een '
         '<i>toepassing</i> gaat. Je hoeft er nog steeds niet voor te kunnen '
@@ -84,14 +85,14 @@ def bouw(p):
         '<span class="paginanav__titel">Materialenpaspoort</span></a></p>'
         '<p style="margin-top:1rem">De code van die pagina staat er ook bij, in '
         '<a href="https://github.com/FabianB88/materialenpaspoort-voorbeeld" '
-        'target="_blank" rel="noopener">één bestand</a>. Kijk er gerust in; het is '
-        'gewoon HTML, CSS en twintig regels JavaScript.</p>')
+        'target="_blank" rel="noopener">één bestand</a>. Kijk er gerust in: het is '
+        'gewoon HTML, CSS en JavaScript, zonder framework en zonder bouwstap.</p>')
 
     p.accordeon(
         'Wat de AI doet, en wat jij doet',
         '<p>Dit is het belangrijkste onderscheid uit de hele cursus. Claude Code en '
-        'Codex kunnen verrassend veel zelf, maar drie dingen niet — en dat is maar '
-        'goed ook.</p>',
+        'Codex kunnen verrassend veel zelf, maar een paar dingen niet — en dat is '
+        'maar goed ook.</p>',
         [
             {'title': 'Wat de AI wel doet',
              'body': '<p>Claude Code en Codex draaien commando’s op jouw computer. Ze '
@@ -107,10 +108,10 @@ def bouw(p):
                      'accounts aan, en je voltooit de twee inlogstappen: '
                      '<code>gh auth login</code> voor GitHub en '
                      '<code>firebase login</code> voor Firebase.</p>'
-                     '<p>Al het andere gaat via een prompt. Ook het aanmaken van '
-                     'je Firebase-project, de database en de instellingen — daar '
-                     'hoef je nergens voor te klikken, ook al lijkt dat wel zo als '
-                     'je online handleidingen leest.</p>'
+                     '<p>Bijna al het andere gaat via een prompt, ook het aanmaken van je '
+                     'Firebase-project. Er is één uitzondering, in hoofdstuk 7: de '
+                     'allereerste database van een project laat zich niet vanaf de '
+                     'opdrachtregel aanmaken. Dat is vier klikken, en dan ben je er.</p>'
                      '<p>Dat is geen beperking van de techniek maar een grens die je '
                      'wilt houden. Inloggen gebeurt in een browser en hangt aan jouw '
                      'identiteit. Een assistent die jouw wachtwoord intikt, is precies '
@@ -138,9 +139,10 @@ def bouw(p):
         '<p>Zo ziet het geheel eruit. De eerste keer ben je ongeveer twee uur bezig, '
         'waarvan het meeste in stap 1 tot en met 3. Die doe je nooit meer opnieuw: bij '
         'je volgende project begin je bij stap 4.</p>'
-        '<p>Alleen stap 1 en stap 3 doe je met de hand. De rest geef je als opdracht '
-        'aan je assistent; de commando’s staan er telkens bij zodat je kunt volgen '
-        'wat hij doet en het zelf kunt overnemen als hij vastloopt.</p>'
+        '<p>Met de hand doe je alleen stap 1, stap 3, en het aanmaken van de database in '
+        'stap 6 — dat laatste omdat de opdrachtregel dat nu eenmaal niet kan. De rest '
+        'geef je als opdracht aan je assistent; de commando’s staan er telkens bij '
+        'zodat je kunt volgen wat hij doet en het zelf kunt overnemen als hij vastloopt.</p>'
         '<ol>'
         '<li><b>Accounts aanmaken.</b> GitHub en Firebase, allebei met je eigen '
         'account. Hoofdstuk 2.</li>'
