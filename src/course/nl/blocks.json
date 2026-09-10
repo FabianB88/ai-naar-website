@@ -385,7 +385,7 @@
     "_trackingId": 34
   },
   {
-    "_id": "b-422",
+    "_id": "b-421",
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "terugnaar-blok",
@@ -422,7 +422,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Moment 0: vertel Git wie je bent",
+    "title": "Eerst: open zelf een terminal",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -433,7 +433,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Tekst",
+    "title": "Moment 1: inloggen bij GitHub",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -444,7 +444,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Moment 1: inloggen bij GitHub",
+    "title": "Tekst",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -466,7 +466,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Tekst",
+    "title": "Controleren",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -477,7 +477,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Controleren",
+    "title": "Moment 2: inloggen bij Firebase",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -488,7 +488,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Moment 2: inloggen bij Firebase",
+    "title": "Tekst",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -510,7 +510,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Tekst",
+    "title": "Controleren",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -521,7 +521,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Controleren",
+    "title": "En nu neemt je assistent het over",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -532,7 +532,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "En nu neemt je assistent het over",
+    "title": "Tekst",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -543,7 +543,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Tekst",
+    "title": "Wat hij dan uitvoert",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -554,7 +554,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Wat hij dan uitvoert",
+    "title": "Controleer of je op Spark zit",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -565,7 +565,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Controleer of je op Spark zit",
+    "title": "Wat er nu op je computer staat",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -576,7 +576,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Wat er nu op je computer staat",
+    "title": "Oefening: leg je koppeling vast",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -587,7 +587,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Oefening: leg je koppeling vast",
+    "title": "Meenemen",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -598,7 +598,7 @@
     "_parentId": "a-4",
     "_type": "block",
     "_classes": "separator",
-    "title": "Meenemen",
+    "title": "Even checken",
     "displayTitle": "",
     "body": "",
     "instruction": "",
@@ -608,26 +608,15 @@
     "_id": "b-420",
     "_parentId": "a-4",
     "_type": "block",
-    "_classes": "separator",
-    "title": "Even checken",
+    "_classes": "separator paginanav",
+    "title": "Tekst",
     "displayTitle": "",
     "body": "",
     "instruction": "",
     "_trackingId": 55
   },
   {
-    "_id": "b-421",
-    "_parentId": "a-4",
-    "_type": "block",
-    "_classes": "separator paginanav",
-    "title": "Tekst",
-    "displayTitle": "",
-    "body": "",
-    "instruction": "",
-    "_trackingId": 56
-  },
-  {
-    "_id": "b-515",
+    "_id": "b-512",
     "_parentId": "a-5",
     "_type": "block",
     "_classes": "terugnaar-blok",
@@ -635,7 +624,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 57
+    "_trackingId": 56
   },
   {
     "_id": "b-501",
@@ -646,87 +635,54 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 58
+    "_trackingId": 57
   },
   {
     "_id": "b-502",
     "_parentId": "a-5",
     "_type": "block",
     "_classes": "separator",
-    "title": "Stappenplan: je pagina in een repository",
+    "title": "Wat jij beslist, en wat je assistent doet",
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 59
+    "_trackingId": 58
   },
   {
     "_id": "b-503",
     "_parentId": "a-5",
     "_type": "block",
     "_classes": "separator",
-    "title": "Stap 2: de geschiedenis beginnen",
+    "title": "De prompt",
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 60
+    "_trackingId": 59
   },
   {
     "_id": "b-504",
     "_parentId": "a-5",
     "_type": "block",
     "_classes": "separator",
-    "title": "Stap 3: zeggen wat er niet in mag",
+    "title": "Die lijst lees je echt",
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 61
+    "_trackingId": 60
   },
   {
     "_id": "b-505",
     "_parentId": "a-5",
     "_type": "block",
     "_classes": "separator",
-    "title": "Tekst",
+    "title": "Wat hij dan uitvoert",
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 62
+    "_trackingId": 61
   },
   {
     "_id": "b-506",
-    "_parentId": "a-5",
-    "_type": "block",
-    "_classes": "separator",
-    "title": "Wat er nooit in een commit hoort",
-    "displayTitle": "",
-    "body": "",
-    "instruction": "",
-    "_trackingId": 63
-  },
-  {
-    "_id": "b-507",
-    "_parentId": "a-5",
-    "_type": "block",
-    "_classes": "separator",
-    "title": "Stap 4: je eerste commit",
-    "displayTitle": "",
-    "body": "",
-    "instruction": "",
-    "_trackingId": 64
-  },
-  {
-    "_id": "b-508",
-    "_parentId": "a-5",
-    "_type": "block",
-    "_classes": "separator",
-    "title": "Stap 5: op GitHub zetten",
-    "displayTitle": "",
-    "body": "",
-    "instruction": "",
-    "_trackingId": 65
-  },
-  {
-    "_id": "b-509",
     "_parentId": "a-5",
     "_type": "block",
     "_classes": "separator",
@@ -734,21 +690,21 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 66
+    "_trackingId": 62
   },
   {
-    "_id": "b-510",
+    "_id": "b-507",
     "_parentId": "a-5",
     "_type": "block",
     "_classes": "separator",
-    "title": "Vanaf nu: de lus",
+    "title": "Vanaf nu: één zin",
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 67
+    "_trackingId": 63
   },
   {
-    "_id": "b-511",
+    "_id": "b-508",
     "_parentId": "a-5",
     "_type": "block",
     "_classes": "separator",
@@ -756,10 +712,10 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 68
+    "_trackingId": 64
   },
   {
-    "_id": "b-512",
+    "_id": "b-509",
     "_parentId": "a-5",
     "_type": "block",
     "_classes": "separator",
@@ -767,10 +723,10 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 69
+    "_trackingId": 65
   },
   {
-    "_id": "b-513",
+    "_id": "b-510",
     "_parentId": "a-5",
     "_type": "block",
     "_classes": "separator",
@@ -778,10 +734,10 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 70
+    "_trackingId": 66
   },
   {
-    "_id": "b-514",
+    "_id": "b-511",
     "_parentId": "a-5",
     "_type": "block",
     "_classes": "separator paginanav",
@@ -789,10 +745,10 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 71
+    "_trackingId": 67
   },
   {
-    "_id": "b-617",
+    "_id": "b-616",
     "_parentId": "a-6",
     "_type": "block",
     "_classes": "terugnaar-blok",
@@ -800,7 +756,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 72
+    "_trackingId": 68
   },
   {
     "_id": "b-601",
@@ -811,7 +767,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 73
+    "_trackingId": 69
   },
   {
     "_id": "b-602",
@@ -822,7 +778,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 74
+    "_trackingId": 70
   },
   {
     "_id": "b-603",
@@ -833,7 +789,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 75
+    "_trackingId": 71
   },
   {
     "_id": "b-604",
@@ -844,7 +800,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 76
+    "_trackingId": 72
   },
   {
     "_id": "b-605",
@@ -855,32 +811,21 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 77
+    "_trackingId": 73
   },
   {
     "_id": "b-606",
     "_parentId": "a-6",
     "_type": "block",
     "_classes": "separator",
-    "title": "Stap 2: publiceren",
+    "title": "Stap 2: publiceren en vastleggen",
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 78
+    "_trackingId": 74
   },
   {
     "_id": "b-607",
-    "_parentId": "a-6",
-    "_type": "block",
-    "_classes": "separator",
-    "title": "Stap 3: vastleggen",
-    "displayTitle": "",
-    "body": "",
-    "instruction": "",
-    "_trackingId": 79
-  },
-  {
-    "_id": "b-608",
     "_parentId": "a-6",
     "_type": "block",
     "_classes": "separator",
@@ -888,10 +833,10 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 80
+    "_trackingId": 75
   },
   {
-    "_id": "b-609",
+    "_id": "b-608",
     "_parentId": "a-6",
     "_type": "block",
     "_classes": "separator",
@@ -899,10 +844,10 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 81
+    "_trackingId": 76
   },
   {
-    "_id": "b-610",
+    "_id": "b-609",
     "_parentId": "a-6",
     "_type": "block",
     "_classes": "separator",
@@ -910,10 +855,10 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 82
+    "_trackingId": 77
   },
   {
-    "_id": "b-611",
+    "_id": "b-610",
     "_parentId": "a-6",
     "_type": "block",
     "_classes": "separator",
@@ -921,10 +866,10 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 83
+    "_trackingId": 78
   },
   {
-    "_id": "b-612",
+    "_id": "b-611",
     "_parentId": "a-6",
     "_type": "block",
     "_classes": "separator",
@@ -932,10 +877,10 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 84
+    "_trackingId": 79
   },
   {
-    "_id": "b-613",
+    "_id": "b-612",
     "_parentId": "a-6",
     "_type": "block",
     "_classes": "separator",
@@ -943,10 +888,10 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 85
+    "_trackingId": 80
   },
   {
-    "_id": "b-614",
+    "_id": "b-613",
     "_parentId": "a-6",
     "_type": "block",
     "_classes": "separator",
@@ -954,10 +899,10 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 86
+    "_trackingId": 81
   },
   {
-    "_id": "b-615",
+    "_id": "b-614",
     "_parentId": "a-6",
     "_type": "block",
     "_classes": "separator",
@@ -965,10 +910,10 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 87
+    "_trackingId": 82
   },
   {
-    "_id": "b-616",
+    "_id": "b-615",
     "_parentId": "a-6",
     "_type": "block",
     "_classes": "separator paginanav",
@@ -976,7 +921,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 88
+    "_trackingId": 83
   },
   {
     "_id": "b-722",
@@ -987,7 +932,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 89
+    "_trackingId": 84
   },
   {
     "_id": "b-701",
@@ -998,7 +943,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 90
+    "_trackingId": 85
   },
   {
     "_id": "b-702",
@@ -1009,7 +954,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 91
+    "_trackingId": 86
   },
   {
     "_id": "b-703",
@@ -1020,7 +965,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 92
+    "_trackingId": 87
   },
   {
     "_id": "b-704",
@@ -1031,7 +976,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 93
+    "_trackingId": 88
   },
   {
     "_id": "b-705",
@@ -1042,7 +987,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 94
+    "_trackingId": 89
   },
   {
     "_id": "b-706",
@@ -1053,7 +998,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 95
+    "_trackingId": 90
   },
   {
     "_id": "b-707",
@@ -1064,7 +1009,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 96
+    "_trackingId": 91
   },
   {
     "_id": "b-708",
@@ -1075,7 +1020,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 97
+    "_trackingId": 92
   },
   {
     "_id": "b-709",
@@ -1086,7 +1031,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 98
+    "_trackingId": 93
   },
   {
     "_id": "b-710",
@@ -1097,7 +1042,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 99
+    "_trackingId": 94
   },
   {
     "_id": "b-711",
@@ -1108,7 +1053,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 100
+    "_trackingId": 95
   },
   {
     "_id": "b-712",
@@ -1119,7 +1064,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 101
+    "_trackingId": 96
   },
   {
     "_id": "b-713",
@@ -1130,7 +1075,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 102
+    "_trackingId": 97
   },
   {
     "_id": "b-714",
@@ -1141,7 +1086,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 103
+    "_trackingId": 98
   },
   {
     "_id": "b-715",
@@ -1152,7 +1097,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 104
+    "_trackingId": 99
   },
   {
     "_id": "b-716",
@@ -1163,7 +1108,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 105
+    "_trackingId": 100
   },
   {
     "_id": "b-717",
@@ -1174,7 +1119,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 106
+    "_trackingId": 101
   },
   {
     "_id": "b-718",
@@ -1185,7 +1130,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 107
+    "_trackingId": 102
   },
   {
     "_id": "b-719",
@@ -1196,7 +1141,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 108
+    "_trackingId": 103
   },
   {
     "_id": "b-720",
@@ -1207,7 +1152,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 109
+    "_trackingId": 104
   },
   {
     "_id": "b-721",
@@ -1218,7 +1163,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 110
+    "_trackingId": 105
   },
   {
     "_id": "b-813",
@@ -1229,7 +1174,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 111
+    "_trackingId": 106
   },
   {
     "_id": "b-801",
@@ -1240,7 +1185,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 112
+    "_trackingId": 107
   },
   {
     "_id": "b-802",
@@ -1251,7 +1196,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 113
+    "_trackingId": 108
   },
   {
     "_id": "b-803",
@@ -1262,7 +1207,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 114
+    "_trackingId": 109
   },
   {
     "_id": "b-804",
@@ -1273,7 +1218,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 115
+    "_trackingId": 110
   },
   {
     "_id": "b-805",
@@ -1284,7 +1229,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 116
+    "_trackingId": 111
   },
   {
     "_id": "b-806",
@@ -1295,7 +1240,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 117
+    "_trackingId": 112
   },
   {
     "_id": "b-807",
@@ -1306,7 +1251,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 118
+    "_trackingId": 113
   },
   {
     "_id": "b-808",
@@ -1317,7 +1262,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 119
+    "_trackingId": 114
   },
   {
     "_id": "b-809",
@@ -1328,7 +1273,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 120
+    "_trackingId": 115
   },
   {
     "_id": "b-810",
@@ -1339,7 +1284,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 121
+    "_trackingId": 116
   },
   {
     "_id": "b-811",
@@ -1350,7 +1295,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 122
+    "_trackingId": 117
   },
   {
     "_id": "b-812",
@@ -1361,7 +1306,7 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 123
+    "_trackingId": 118
   },
   {
     "_id": "b-8001",
@@ -1372,6 +1317,6 @@
     "displayTitle": "",
     "body": "",
     "instruction": "",
-    "_trackingId": 124
+    "_trackingId": 119
   }
 ]

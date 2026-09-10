@@ -17,13 +17,12 @@ def bouw(p):
 
     p.tekst(
         'Stappenplan: publiceren',
-        '<p>Drie stappen, en één prompt doet de eerste twee. Voer dit uit in dezelfde '
-        'map als je repository uit hoofdstuk 5.</p>'
+        '<p>Twee prompts, in dezelfde map als je repository uit hoofdstuk 5.</p>'
         '<ol>'
-        '<li><b>Laat je assistent Hosting inrichten.</b> Hij schrijft twee kleine '
-        'bestanden en verplaatst je pagina naar de juiste map.</li>'
-        '<li><b>Publiceren.</b> Eén commando, en je krijgt je adres terug.</li>'
-        '<li><b>Vastleggen.</b> Zodat je repository klopt met wat er online staat.</li>'
+        '<li><b>Hosting inrichten.</b> Je assistent schrijft twee kleine bestanden '
+        'en verplaatst je pagina naar de juiste map. Jij kijkt wat erin staat.</li>'
+        '<li><b>Publiceren en vastleggen.</b> Je krijgt je adres terug, en je '
+        'repository klopt met wat er online staat.</li>'
         '</ol>')
 
     p.commando(
@@ -68,22 +67,12 @@ def bouw(p):
         'bijna altijd de reden.</p>')
 
     p.commando(
-        'Stap 2: publiceren',
-        '',
-        beide='firebase deploy --only hosting',
-        na='Na een halve minuut staat er "Deploy complete!" met daaronder je Hosting URL. '
-           'Open die meteen even, ook op je telefoon.')
-
-    p.commando(
-        'Stap 3: vastleggen',
-        '<p>Er zijn bestanden bijgekomen en je pagina is verplaatst. Leg dat vast, anders '
-        'loopt je repository achter op wat er online staat.</p>',
-        beide=[
-            'git add .',
-            'git commit -m "Firebase Hosting ingericht en eerste versie gepubliceerd"',
-            'git push',
-        ],
-        na='Ook dit kun je in één zin aan je assistent vragen: leg vast en publiceer.')
+        'Stap 2: publiceren en vastleggen',
+        '<p>Heb je gezien wat er in de bestanden staat, dan maakt deze zin het af.</p>',
+        beide='Publiceer naar Firebase Hosting, leg alles vast en push het.',
+        na='Na een halve minuut krijg je je adres terug, iets als '
+           'jouw-project.web.app. Open het meteen, ook op je telefoon. Onder water zijn '
+           'dat firebase deploy --only hosting, en daarna git add, commit en push.')
 
     p.aandacht(
         'Publiceren en vastleggen zijn twee dingen',
@@ -98,14 +87,11 @@ def bouw(p):
 
     p.commando(
         'De bijwerklus',
-        '<p>Vanaf nu ziet elke wijziging er zo uit. Je assistent kan deze drie in één '
-        'keer voor je doen als je zegt: leg vast en publiceer.</p>',
-        beide=[
-            'git add .',
-            'git commit -m "Demontagestappen toegevoegd"',
-            'git push',
-            'firebase deploy --only hosting',
-        ])
+        '<p>Vanaf nu ziet elke wijziging er zo uit: je past iets aan, en zegt:</p>',
+        beide='Leg vast wat ik heb veranderd, push het en publiceer.',
+        na='Eerst vastleggen, dan publiceren — die volgorde houdt je assistent aan als '
+           'je het zo vraagt. Dan hoort bij elke live versie een commit die je kunt '
+           'terugvinden.')
 
     p.accordeon(
         'Twee dingen die je een keer nodig hebt',

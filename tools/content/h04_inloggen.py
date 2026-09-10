@@ -27,27 +27,23 @@ def bouw(p):
         'assistent zegt dat het klopt.</p>')
 
     p.tekst(
-        'Moment 0: vertel Git wie je bent',
-        '<p>Strikt genomen geen inloggen, maar het moet wel voordat je iets kunt '
-        'vastleggen. Git zet bij elke opgeslagen versie een naam en een e-mailadres. '
-        'Doe je dit niet, dan weigert je eerste commit met een melding waar je even op '
-        'zit te kijken.</p>')
-
-    p.commando(
-        '',
-        '<p>Vervang de naam en het adres door die van jezelf.</p>',
-        beide=[
-            'git config --global user.name "Jelle Bakker"',
-            'git config --global user.email "1234567+jellebakker@users.noreply.github.com"',
-        ],
-        na='Dat rare adres is geen typefout: GitHub geeft je een noreply-adres zodat je '
-           'echte e-mailadres niet in elke commit belandt. Je vindt het onder Settings '
-           '→ Emails, bij "Keep my email addresses private". Gebruik anders gewoon je '
-           'eigen adres — het is dan wel openbaar terug te vinden.')
+        'Eerst: open zelf een terminal',
+        '<p>Beide inlogstappen doe je in een <b>eigen venster</b>, los van je '
+        'assistent. Dat venster open je zo:</p>'
+        '<ul>'
+        '<li><b>Windows:</b> druk op de Windows-toets, typ <code>PowerShell</code> en '
+        'druk op Enter. Heb je <i>Terminal</i> in je startmenu, dan mag dat ook — daar '
+        'draait PowerShell in.</li>'
+        '<li><b>macOS:</b> druk op Cmd + spatie, typ <code>Terminal</code> en druk op '
+        'Enter.</li>'
+        '</ul>'
+        '<p>Je krijgt een venster met een knipperende cursor. Zet het naast je '
+        'assistent: daar doe je de twee commando’s hieronder, en daarna mag het weer '
+        'dicht. De inlog blijft bewaard, ook voor je assistent.</p>')
 
     p.tekst(
         'Moment 1: inloggen bij GitHub',
-        '<p>Tik dit in je eigen terminal. Niet in het venster van je assistent.</p>')
+        '<p>Tik dit in het venster dat je net hebt geopend, en druk op Enter.</p>')
 
     p.commando(
         '',
@@ -83,7 +79,8 @@ def bouw(p):
 
     p.tekst(
         'Moment 2: inloggen bij Firebase',
-        '<p>Zelfde idee, andere route: hier opent je browser meteen.</p>')
+        '<p>In hetzelfde venster. Zelfde idee, andere route: hier opent je browser '
+        'meteen.</p>')
 
     p.commando(
         '',

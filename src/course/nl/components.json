@@ -597,8 +597,8 @@
     "displayTitle": "",
     "body": "<a class=\"terugnaar\" href=\"#/\"><span class=\"terugnaar__pijl\" aria-hidden=\"true\">&#8592;</span>Overzicht</a>",
     "instruction": "",
-    "_id": "c-422",
-    "_parentId": "b-422",
+    "_id": "c-421",
+    "_parentId": "b-421",
     "_type": "component"
   },
   {
@@ -629,9 +629,9 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Moment 0: vertel Git wie je bent",
-    "displayTitle": "Moment 0: vertel Git wie je bent",
-    "body": "<p>Strikt genomen geen inloggen, maar het moet wel voordat je iets kunt vastleggen. Git zet bij elke opgeslagen versie een naam en een e-mailadres. Doe je dit niet, dan weigert je eerste commit met een melding waar je even op zit te kijken.</p>",
+    "title": "Eerst: open zelf een terminal",
+    "displayTitle": "Eerst: open zelf een terminal",
+    "body": "<p>Beide inlogstappen doe je in een <b>eigen venster</b>, los van je assistent. Dat venster open je zo:</p><ul><li><b>Windows:</b> druk op de Windows-toets, typ <code>PowerShell</code> en druk op Enter. Heb je <i>Terminal</i> in je startmenu, dan mag dat ook — daar draait PowerShell in.</li><li><b>macOS:</b> druk op Cmd + spatie, typ <code>Terminal</code> en druk op Enter.</li></ul><p>Je krijgt een venster met een knipperende cursor. Zet het naast je assistent: daar doe je de twee commando’s hieronder, en daarna mag het weer dicht. De inlog blijft bewaard, ook voor je assistent.</p>",
     "instruction": "",
     "_id": "c-403",
     "_parentId": "b-403",
@@ -641,9 +641,9 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Tekst",
-    "displayTitle": "",
-    "body": "<p>Vervang de naam en het adres door die van jezelf.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>git config --global user.name &quot;Jelle Bakker&quot;\ngit config --global user.email &quot;1234567+jellebakker@users.noreply.github.com&quot;</code></pre></div></div><p class=\"commando__na\">Dat rare adres is geen typefout: GitHub geeft je een noreply-adres zodat je echte e-mailadres niet in elke commit belandt. Je vindt het onder Settings → Emails, bij \"Keep my email addresses private\". Gebruik anders gewoon je eigen adres — het is dan wel openbaar terug te vinden.</p>",
+    "title": "Moment 1: inloggen bij GitHub",
+    "displayTitle": "Moment 1: inloggen bij GitHub",
+    "body": "<p>Tik dit in het venster dat je net hebt geopend, en druk op Enter.</p>",
     "instruction": "",
     "_id": "c-404",
     "_parentId": "b-404",
@@ -653,9 +653,9 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Moment 1: inloggen bij GitHub",
-    "displayTitle": "Moment 1: inloggen bij GitHub",
-    "body": "<p>Tik dit in je eigen terminal. Niet in het venster van je assistent.</p>",
+    "title": "Tekst",
+    "displayTitle": "",
+    "body": "<div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>gh auth login</code></pre></div></div><p class=\"commando__na\">Daarna volgt een wizard met vier vragen.</p>",
     "instruction": "",
     "_id": "c-405",
     "_parentId": "b-405",
@@ -667,22 +667,10 @@
     "_layout": "full",
     "title": "Tekst",
     "displayTitle": "",
-    "body": "<div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>gh auth login</code></pre></div></div><p class=\"commando__na\">Daarna volgt een wizard met vier vragen.</p>",
+    "body": "<p>De antwoorden die je geeft:</p><ol><li><b>Where do you use GitHub?</b> → <code>GitHub.com</code></li><li><b>What is your preferred protocol?</b> → <code>HTTPS</code>. Dat werkt zonder dat je sleutels hoeft te maken.</li><li><b>Authenticate Git with your GitHub credentials?</b> → <code>Yes</code>. Hiermee regel je in één keer dat ook <code>git push</code> straks werkt.</li><li><b>How would you like to authenticate?</b> → <code>Login with a web browser</code></li></ol><p>Dan verschijnt er een <b>eenmalige code</b> van acht tekens, bijvoorbeeld <code>A1B2-C3D4</code>. Kopieer die, druk op Enter, en je browser opent <code>github.com/login/device</code>. Plak de code, en geef toestemming.</p><p>Dit is het moment waarop je assistent kan helpen: laat hem die pagina openen terwijl jij de code bij de hand houdt. De code zelf tik jij in.</p>",
     "instruction": "",
     "_id": "c-406",
     "_parentId": "b-406",
-    "_type": "component"
-  },
-  {
-    "_component": "text",
-    "_classes": "",
-    "_layout": "full",
-    "title": "Tekst",
-    "displayTitle": "",
-    "body": "<p>De antwoorden die je geeft:</p><ol><li><b>Where do you use GitHub?</b> → <code>GitHub.com</code></li><li><b>What is your preferred protocol?</b> → <code>HTTPS</code>. Dat werkt zonder dat je sleutels hoeft te maken.</li><li><b>Authenticate Git with your GitHub credentials?</b> → <code>Yes</code>. Hiermee regel je in één keer dat ook <code>git push</code> straks werkt.</li><li><b>How would you like to authenticate?</b> → <code>Login with a web browser</code></li></ol><p>Dan verschijnt er een <b>eenmalige code</b> van acht tekens, bijvoorbeeld <code>A1B2-C3D4</code>. Kopieer die, druk op Enter, en je browser opent <code>github.com/login/device</code>. Plak de code, en geef toestemming.</p><p>Dit is het moment waarop je assistent kan helpen: laat hem die pagina openen terwijl jij de code bij de hand houdt. De code zelf tik jij in.</p>",
-    "instruction": "",
-    "_id": "c-407",
-    "_parentId": "b-407",
     "_type": "component"
   },
   {
@@ -693,8 +681,8 @@
     "displayTitle": "Controleren",
     "body": "<p>Terug in je terminal.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>gh auth status</code></pre></div></div><p class=\"commando__na\">Je ziet dan \"Logged in to github.com account\" met je gebruikersnaam erachter. Staat daar iets anders, dan ben je in de browser met het verkeerde account ingelogd — dat gebeurt vaker dan je denkt als je nog een schoolaccount open hebt staan.</p>",
     "instruction": "",
-    "_id": "c-408",
-    "_parentId": "b-408",
+    "_id": "c-407",
+    "_parentId": "b-407",
     "_type": "component"
   },
   {
@@ -703,7 +691,19 @@
     "_layout": "full",
     "title": "Moment 2: inloggen bij Firebase",
     "displayTitle": "Moment 2: inloggen bij Firebase",
-    "body": "<p>Zelfde idee, andere route: hier opent je browser meteen.</p>",
+    "body": "<p>In hetzelfde venster. Zelfde idee, andere route: hier opent je browser meteen.</p>",
+    "instruction": "",
+    "_id": "c-408",
+    "_parentId": "b-408",
+    "_type": "component"
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Tekst",
+    "displayTitle": "",
+    "body": "<div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>firebase login</code></pre></div></div><p class=\"commando__na\">Eerst vraagt hij of Firebase gebruiksgegevens van de CLI mag verzamelen. Je mag daar rustig nee op zeggen; het werkt gewoon.</p>",
     "instruction": "",
     "_id": "c-409",
     "_parentId": "b-409",
@@ -715,22 +715,10 @@
     "_layout": "full",
     "title": "Tekst",
     "displayTitle": "",
-    "body": "<div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>firebase login</code></pre></div></div><p class=\"commando__na\">Eerst vraagt hij of Firebase gebruiksgegevens van de CLI mag verzamelen. Je mag daar rustig nee op zeggen; het werkt gewoon.</p>",
+    "body": "<p>Daarna opent je browser. Kies je Google-account — hetzelfde als je in hoofdstuk 2 hebt opgeschreven — en geef de Firebase CLI toestemming. Je krijgt een pagina te zien dat het gelukt is, en in je terminal staat dat je bent ingelogd.</p><p>Zit je in je browser standaard met een ander Google-account ingelogd, kies dan bewust. Dit is de tweede plek waar mensen per ongeluk hun schoolaccount pakken en zich later afvragen waarom hun project onvindbaar is.</p>",
     "instruction": "",
     "_id": "c-410",
     "_parentId": "b-410",
-    "_type": "component"
-  },
-  {
-    "_component": "text",
-    "_classes": "",
-    "_layout": "full",
-    "title": "Tekst",
-    "displayTitle": "",
-    "body": "<p>Daarna opent je browser. Kies je Google-account — hetzelfde als je in hoofdstuk 2 hebt opgeschreven — en geef de Firebase CLI toestemming. Je krijgt een pagina te zien dat het gelukt is, en in je terminal staat dat je bent ingelogd.</p><p>Zit je in je browser standaard met een ander Google-account ingelogd, kies dan bewust. Dit is de tweede plek waar mensen per ongeluk hun schoolaccount pakken en zich later afvragen waarom hun project onvindbaar is.</p>",
-    "instruction": "",
-    "_id": "c-411",
-    "_parentId": "b-411",
     "_type": "component"
   },
   {
@@ -741,8 +729,8 @@
     "displayTitle": "Controleren",
     "body": "<p>Werkt de koppeling?</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>firebase projects:list</code></pre></div></div><p class=\"commando__na\">Heb je nog geen projecten, dan is de lijst leeg — dat klopt, die maak je hieronder aan. Het gaat er hier alleen om dat het commando antwoordt en niet om een inlogfout vraagt.</p>",
     "instruction": "",
-    "_id": "c-412",
-    "_parentId": "b-412",
+    "_id": "c-411",
+    "_parentId": "b-411",
     "_type": "component"
   },
   {
@@ -753,8 +741,8 @@
     "displayTitle": "En nu neemt je assistent het over",
     "body": "<p>Dit was het handwerk. Vanaf hier kan alles via een prompt, want de CLI’s mogen nu namens jou werken. Het eerste dat je laat doen is je Firebase-project aanmaken — dat hoeft dus niet in de console.</p>",
     "instruction": "",
-    "_id": "c-413",
-    "_parentId": "b-413",
+    "_id": "c-412",
+    "_parentId": "b-412",
     "_type": "component"
   },
   {
@@ -765,8 +753,8 @@
     "displayTitle": "",
     "body": "<p>Geef dit aan Claude Code of Codex, met je eigen projectnaam erin.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>Maak een Firebase-project aan met de id materialenpaspoort-w3 en\nzet het als actief project voor deze map. Controleer daarna dat het\nin de lijst staat en laat me de uitvoer zien.\n\nZet geen extra diensten aan en koppel geen betaalmethode: we blijven\nop het gratis Spark-plan.</code></pre></div></div><p class=\"commando__na\">Krijg je terug dat de id al bezet is, kies dan een andere. Project-id’s zijn wereldwijd uniek, dus algemene namen zijn meestal al weg.</p>",
     "instruction": "",
-    "_id": "c-414",
-    "_parentId": "b-414",
+    "_id": "c-413",
+    "_parentId": "b-413",
     "_type": "component"
   },
   {
@@ -777,8 +765,8 @@
     "displayTitle": "Wat hij dan uitvoert",
     "body": "<p>Twee commando’s. De eerste maakt het project, de tweede onthoudt in deze map welk project erbij hoort.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>firebase projects:create materialenpaspoort-w3 --display-name &quot;Materialenpaspoort W3&quot;\nfirebase use materialenpaspoort-w3</code></pre></div></div><p class=\"commando__na\">De eerste regel is lang; laat hem gerust doorlopen in plaats van hem af te breken, want Windows en macOS breken regels op verschillende manieren af.</p>",
     "instruction": "",
-    "_id": "c-415",
-    "_parentId": "b-415",
+    "_id": "c-414",
+    "_parentId": "b-414",
     "_type": "component"
   },
   {
@@ -789,8 +777,8 @@
     "displayTitle": "Controleer of je op Spark zit",
     "body": "<p>Dit is het ene moment waarop het de moeite waard is om wél even in de <a href=\"https://console.firebase.google.com\" target=\"_blank\" rel=\"noopener\">console</a> te kijken. Open je nieuwe project en zoek linksonder welk plan er staat. Daar hoort <b>Spark</b> te staan.</p><p>Een project dat via de CLI wordt aangemaakt staat standaard op het gratis plan, dus het hoort goed te zijn. Maar het is de enige instelling in deze cursus die geld kan kosten als hij verkeerd staat, en dat is dertig seconden kijken waard.</p>",
     "instruction": "",
-    "_id": "c-416",
-    "_parentId": "b-416",
+    "_id": "c-415",
+    "_parentId": "b-415",
     "_type": "component"
   },
   {
@@ -816,8 +804,8 @@
         "body": "<p>Bij GitHub: Settings → Applications → Authorized OAuth Apps, daar staat GitHub CLI tussen. Bij Google: <a href=\"https://myaccount.google.com/permissions\" target=\"_blank\" rel=\"noopener\">myaccount.google.com/permissions</a>, zoek Firebase CLI.</p><p>Handig om te weten als je laptop kwijtraakt: daar zet je de toegang uit, niet in je terminal.</p>"
       }
     ],
-    "_id": "c-417",
-    "_parentId": "b-417",
+    "_id": "c-416",
+    "_parentId": "b-416",
     "_type": "component"
   },
   {
@@ -828,8 +816,8 @@
     "displayTitle": "Oefening: leg je koppeling vast",
     "body": "<p>Twee regels uitvoer, maar wel de twee die bepalen of de rest van de cursus werkt.</p><div class=\"canvas-groep\" data-laag=\"Oefening: leg je koppeling vast\"><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-gh\">Wat zegt gh auth status precies?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-gh\" name=\"h04-gh\" rows=\"2\" placeholder=\"Welk account staat erbij?\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-fb\">Welke projecten geeft firebase projects:list terug?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-fb\" name=\"h04-fb\" rows=\"2\" placeholder=\"Staat jouw project-id ertussen?\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-account\">Is dat allebei je eigen account, niet je HAN-account?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-account\" name=\"h04-account\" rows=\"2\" placeholder=\"Controleer het echt, dit is de klassieke fout\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-project\">Welke project-id heeft je assistent aangemaakt?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-project\" name=\"h04-project\" rows=\"2\" placeholder=\"Die komt terug in je webadres\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-plan\">Staat je project op Spark?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-plan\" name=\"h04-plan\" rows=\"2\" placeholder=\"Linksonder in de console; de enige instelling die geld kan kosten\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h04-uitloggen\">Wanneer log je weer uit, en op welke computer?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h04-uitloggen\" name=\"h04-uitloggen\" rows=\"2\" placeholder=\"Zeker doen op een gedeelde of geleende laptop\"></textarea></div></div>",
     "instruction": "",
-    "_id": "c-418",
-    "_parentId": "b-418",
+    "_id": "c-417",
+    "_parentId": "b-417",
     "_type": "component"
   },
   {
@@ -840,8 +828,8 @@
     "displayTitle": "Meenemen",
     "body": "<p>Werken beide controlecommando’s en staat je project er? Dan is de voorbereiding klaar. Er komt nog één handeling in de console, in hoofdstuk 7, en verder gaat alles via prompts.</p><div class=\"canvas-acties\"><button type=\"button\" class=\"btn-canvas js-canvas-kopieren\">Kopieer als tekst</button> <button type=\"button\" class=\"btn-canvas btn-canvas--stil js-canvas-wissen\">Wis mijn antwoorden</button><span class=\"canvas-melding js-canvas-melding\" role=\"status\" aria-live=\"polite\"></span></div>",
     "instruction": "",
-    "_id": "c-419",
-    "_parentId": "b-419",
+    "_id": "c-418",
+    "_parentId": "b-418",
     "_type": "component"
   },
   {
@@ -891,8 +879,8 @@
         "final": "<p>Nog niet helemaal.</p>"
       }
     },
-    "_id": "c-420",
-    "_parentId": "b-420",
+    "_id": "c-419",
+    "_parentId": "b-419",
     "_type": "component"
   },
   {
@@ -903,8 +891,8 @@
     "displayTitle": "",
     "body": "<div class=\"paginanav__rij\"><a class=\"paginanav__knop paginanav__knop--stil\" href=\"#/\"><span class=\"paginanav__label\">Terug naar</span><span class=\"paginanav__titel\">Overzicht</span></a><a class=\"paginanav__knop\" href=\"#/id/co-5\"><span class=\"paginanav__label\">Volgende onderdeel</span><span class=\"paginanav__titel\">Je pagina in een repository</span></a></div>",
     "instruction": "",
-    "_id": "c-421",
-    "_parentId": "b-421",
+    "_id": "c-420",
+    "_parentId": "b-420",
     "_type": "component"
   },
   {
@@ -915,8 +903,8 @@
     "displayTitle": "",
     "body": "<a class=\"terugnaar\" href=\"#/\"><span class=\"terugnaar__pijl\" aria-hidden=\"true\">&#8592;</span>Overzicht</a>",
     "instruction": "",
-    "_id": "c-515",
-    "_parentId": "b-515",
+    "_id": "c-512",
+    "_parentId": "b-512",
     "_type": "component"
   },
   {
@@ -925,7 +913,7 @@
     "_layout": "full",
     "title": "Wat een repository je oplevert",
     "displayTitle": "Wat een repository je oplevert",
-    "body": "<p>Een <b>repository</b> is je projectmap plus zijn geschiedenis. Je legt zelf vast wanneer er een moment bewaard moet worden — dat heet een <b>commit</b> — en je zet er in één zin bij wat je hebt veranderd.</p><p>Vanaf dat moment verdwijnt niets meer. Je kunt zien wat je vorige week anders deed, twee versies naast elkaar leggen, en terug naar hoe het was voordat je verfijnde in de verkeerde richting. Dat is precies het probleem uit hoofdstuk 1, en dit is de oplossing.</p><p>Er is nog een reden. Je assistent werkt veel prettiger in een map met versiebeheer: gaat een wijziging de mist in, dan kun je hem in één commando terugdraaien in plaats van te hopen dat je nog weet wat er stond.</p>",
+    "body": "<p>Een <b>repository</b> is je projectmap plus zijn geschiedenis. Elke keer dat je iets vastlegt — een <b>commit</b> — wordt er een moment bewaard, met één zin erbij over wat er veranderd is.</p><p>Vanaf dat moment verdwijnt niets meer. Je kunt terug naar hoe het was voordat je de verkeerde kant op verfijnde, en je assistent kan een mislukte wijziging in één commando terugdraaien. Dat is precies het probleem uit hoofdstuk 1, en dit is de oplossing.</p>",
     "instruction": "",
     "_id": "c-501",
     "_parentId": "b-501",
@@ -935,9 +923,9 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Stappenplan: je pagina in een repository",
-    "displayTitle": "Stappenplan: je pagina in een repository",
-    "body": "<p>Vijf stappen. Je assistent kan ze allemaal uitvoeren, maar lees mee — vooral stap 3.</p><ol><li><b>Maak een map met een nette naam</b> en zet je <code>index.html</code> uit hulpmiddel 15 erin. Gebruik kleine letters en streepjes, geen spaties: <code>materialenpaspoort-w3</code>.</li><li><b>Begin de geschiedenis.</b> Eén commando, en Git houdt vanaf nu de map in de gaten.</li><li><b>Zeg wat er níet in mag.</b> Voordat je je eerste commit maakt, want een bestand dat er eenmaal in zit, krijg je er lastig weer uit.</li><li><b>Maak je eerste commit</b> met een boodschap die iets zegt.</li><li><b>Zet hem op GitHub</b> met één commando dat de repository aanmaakt en meteen uploadt.</li></ol>",
+    "title": "Wat jij beslist, en wat je assistent doet",
+    "displayTitle": "Wat jij beslist, en wat je assistent doet",
+    "body": "<p>Het werk in dit hoofdstuk — de repository beginnen, een uitsluitlijst schrijven, vastleggen, op GitHub zetten — doet je assistent in één keer. Aan jou zijn twee <b>beslissingen</b> en één <b>controle</b>:</p><ul><li><b>Hoe heet het?</b> Kleine letters en streepjes, want de naam komt in je adres te staan: <code>materialenpaspoort-w3</code>.</li><li><b>Privé of openbaar?</b> Zie hieronder. Bij twijfel: privé.</li><li><b>Wat gaat er mee?</b> Voordat er iets wordt vastgelegd, laat je assistent je de lijst met bestanden zien. Die lees jij. Dit is de enige stap in dit hoofdstuk die je niet mag overslaan.</li></ul>",
     "instruction": "",
     "_id": "c-502",
     "_parentId": "b-502",
@@ -947,9 +935,9 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Stap 2: de geschiedenis beginnen",
-    "displayTitle": "Stap 2: de geschiedenis beginnen",
-    "body": "<p>Voer dit uit in je projectmap.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>git init -b main</code></pre></div></div><p class=\"commando__na\">De -b main geeft je hoofdlijn de naam main. Zonder die toevoeging heet hij op oudere Git-versies master, en dan sluit hij later niet aan op wat GitHub verwacht.</p>",
+    "title": "De prompt",
+    "displayTitle": "De prompt",
+    "body": "<p>Zet je <code>index.html</code> uit hulpmiddel 15 in een lege map, open daar je assistent, en geef dit — met jouw naam en jouw keuze erin.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>Zet deze map onder versiebeheer en publiceer hem op GitHub:\n\n1. Stel mijn Git-naam in als dat nog niet is gebeurd, en gebruik als\n   e-mailadres mijn GitHub-noreply-adres. Haal dat op via gh api user.\n2. Begin een repository met de hoofdlijn main.\n3. Schrijf een .gitignore die in elk geval uitsluit: .env, sleutels,\n   serviceAccount-bestanden, .firebase/, logbestanden en de map data-ruw/.\n4. Laat me de lijst zien van alles wat in de eerste commit gaat, en\n   wacht op mijn akkoord.\n5. Leg het vast met een boodschap die zegt wat erin zit.\n6. Maak op GitHub de repository materialenpaspoort-w3 aan als PRIVE\n   en push. Geef me daarna het adres.</code></pre></div></div><p class=\"commando__na\">Stap 4 is de reden dat deze prompt zo lang is. Zonder die regel legt je assistent gewoon alles vast wat in de map staat — ook dat ene bestand dat je vergeten was.</p>",
     "instruction": "",
     "_id": "c-503",
     "_parentId": "b-503",
@@ -957,11 +945,11 @@
   },
   {
     "_component": "text",
-    "_classes": "",
+    "_classes": "attention",
     "_layout": "full",
-    "title": "Stap 3: zeggen wat er niet in mag",
-    "displayTitle": "Stap 3: zeggen wat er niet in mag",
-    "body": "<p>Dit is het moment om even na te denken, want een repository is een geschiedenis: iets weghalen in een latere commit betekent niet dat het uit de geschiedenis verdwijnt. Wie terugbladert, vindt het gewoon terug. Bij een openbare repository vindt de hele wereld het terug.</p><p>Maak daarom eerst een bestand met de naam <code>.gitignore</code> — met een punt ervoor — met daarin wat Git moet negeren.</p>",
+    "title": "Die lijst lees je echt",
+    "displayTitle": "Die lijst lees je echt",
+    "body": "<p>Een repository is een geschiedenis: iets weghalen in een latere commit haalt het niet uit het verleden. Wie terugbladert, vindt het gewoon terug. Bij een openbare repository vindt de hele wereld het terug.</p><p>Loop de lijst dus na op vier dingen, en zeg nee als er iets tussen staat:</p><ul><li><b>Sleutels en wachtwoorden</b>, ook niet tijdelijk.</li><li><b>Persoonsgegevens</b>: namen, e-mailadressen, respondentenlijsten.</li><li><b>Ruwe gegevens van je opdrachtgever.</b> Cijfers die je mag gebruiken in je analyse, mag je nog niet zomaar publiceren.</li><li><b>Grote bestanden die je niet nodig hebt</b>, zoals een map met foto’s van vijf megabyte per stuk.</li></ul><p>Twijfel je bij een bestand? Laat het weg. Toevoegen kan altijd nog.</p>",
     "instruction": "",
     "_id": "c-504",
     "_parentId": "b-504",
@@ -971,48 +959,12 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Tekst",
-    "displayTitle": "",
-    "body": "<p>De inhoud van dat bestand. Je assistent maakt hem in één keer voor je aan als je hem dit geeft.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code># Instellingen van je editor en je systeem\n.vscode/\n.DS_Store\nThumbs.db\n\n# Sleutels en instellingen die niet openbaar mogen\n.env\n*.key\nserviceAccount*.json\n\n# Firebase-werkbestanden\n.firebase/\nfirebase-debug.log\n\n# Ruwe gegevens van je opdrachtgever\ndata-ruw/</code></pre></div></div><p class=\"commando__na\">Die laatste map is een gewoonte die je jezelf aanleert: alles wat je ongefilterd van je opdrachtgever krijgt, zet je in een map die nooit meegaat.</p>",
+    "title": "Wat hij dan uitvoert",
+    "displayTitle": "Wat hij dan uitvoert",
+    "body": "<p>Ter herkenning, niet om over te tikken. Loopt je assistent ergens vast, dan zie je hier waar hij was.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>gh api user --jq &quot;.id, .login&quot;\ngit config --global user.name &quot;Jelle Bakker&quot;\ngit config --global user.email &quot;1234567+jellebakker@users.noreply.github.com&quot;\ngit init -b main\ngit add .\ngit status\ngit commit -m &quot;Eerste versie van het materialenpaspoort&quot;\ngh repo create materialenpaspoort-w3 --private --source=. --push</code></pre></div></div><p class=\"commando__na\">git status is het moment waarop hij je de lijst laat zien. Het noreply-adres zorgt dat je echte e-mailadres niet in elke commit komt te staan, ook niet als de repository later openbaar wordt.</p>",
     "instruction": "",
     "_id": "c-505",
     "_parentId": "b-505",
-    "_type": "component"
-  },
-  {
-    "_component": "text",
-    "_classes": "attention",
-    "_layout": "full",
-    "title": "Wat er nooit in een commit hoort",
-    "displayTitle": "Wat er nooit in een commit hoort",
-    "body": "<p>Vier dingen, en de eerste twee zijn niet terug te draaien als het misgaat.</p><ul><li><b>Sleutels en wachtwoorden.</b> Ook niet tijdelijk, ook niet in een private repository. Wordt hij ooit openbaar, dan staat het er nog.</li><li><b>Persoonsgegevens.</b> Namen, e-mailadressen, respondentenlijsten. Een repository is geen plek voor gegevens over mensen.</li><li><b>Ruwe gegevens van je opdrachtgever.</b> Cijfers die je mag gebruiken in je analyse mag je nog niet zomaar publiceren.</li><li><b>Grote bestanden die je niet nodig hebt.</b> Een map met foto’s van vijf megabyte per stuk maakt je repository traag en levert niets op.</li></ul><p>Twijfel je bij een bestand? Laat het weg. Toevoegen kan altijd nog.</p>",
-    "instruction": "",
-    "_id": "c-506",
-    "_parentId": "b-506",
-    "_type": "component"
-  },
-  {
-    "_component": "text",
-    "_classes": "",
-    "_layout": "full",
-    "title": "Stap 4: je eerste commit",
-    "displayTitle": "Stap 4: je eerste commit",
-    "body": "<p>Twee commando’s: alles klaarzetten, en dan vastleggen met een boodschap.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>git add .\ngit commit -m &quot;Eerste versie van de one-pager uit hulpmiddel 15&quot;</code></pre></div></div><p class=\"commando__na\">Schrijf in de boodschap wát er veranderd is, niet dát er iets veranderd is. \"Demontagestappen toegevoegd\" helpt je over drie weken; \"update\" niet.</p>",
-    "instruction": "",
-    "_id": "c-507",
-    "_parentId": "b-507",
-    "_type": "component"
-  },
-  {
-    "_component": "text",
-    "_classes": "",
-    "_layout": "full",
-    "title": "Stap 5: op GitHub zetten",
-    "displayTitle": "Stap 5: op GitHub zetten",
-    "body": "<p>Eén commando maakt de repository aan, koppelt hem aan je map en uploadt alles.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>gh repo create materialenpaspoort-w3 --private --source=. --push</code></pre></div></div><p class=\"commando__na\">Vervang de naam door die van jou. Je krijgt het adres van je nieuwe repository terug; open dat even in je browser om te zien dat je bestanden er staan.</p>",
-    "instruction": "",
-    "_id": "c-508",
-    "_parentId": "b-508",
     "_type": "component"
   },
   {
@@ -1021,37 +973,37 @@
     "_layout": "full",
     "title": "Privé of openbaar?",
     "displayTitle": "Privé of openbaar?",
-    "body": "<p>Die keuze in het commando hierboven is geen detail. Je kunt hem later wel omzetten, maar wat openbaar is geweest, kan gekopieerd zijn.</p>",
+    "body": "<p>Je kunt het later omzetten, maar wat openbaar is geweest, kan gekopieerd zijn.</p>",
     "instruction": "Klik op een kop om die open te klappen.",
     "_shouldCollapseItems": false,
     "_items": [
       {
-        "title": "Kies --private als",
-        "body": "<p>Er gegevens van je opdrachtgever in zitten, ook al zijn ze geanonimiseerd. Als je nog niet hebt gevraagd of het openbaar mag. Als er cijfers in staan die nog concept zijn.</p><p>Dit is de standaard tijdens het project. Je kunt hem aan het eind alsnog openzetten als je opdrachtgever akkoord is.</p>"
+        "title": "Kies privé als",
+        "body": "<p>Er gegevens van je opdrachtgever in zitten, ook als ze geanonimiseerd zijn. Als je nog niet hebt gevraagd of het openbaar mag. Als er cijfers in staan die nog concept zijn.</p><p>Dit is de standaard tijdens het project. Openzetten kan aan het eind, als je opdrachtgever akkoord is.</p>"
       },
       {
-        "title": "Kies --public als",
-        "body": "<p>Alles op de pagina van jou is of openbaar mag zijn, en je opdrachtgever ja heeft gezegd. Voordeel: je kunt de repository in je portfolio of een sollicitatie laten zien, en je kunt gratis GitHub Pages gebruiken.</p><p>Bij twijfel begin je privé. Openzetten is één klik; terughalen wat er gekopieerd is, niet.</p>"
+        "title": "Kies openbaar als",
+        "body": "<p>Alles op de pagina van jou is of openbaar mag zijn, en je opdrachtgever ja heeft gezegd. Voordeel: je kunt de repository in je portfolio laten zien, en je kunt gratis GitHub Pages gebruiken.</p><p>Wil je dat, vervang dan PRIVE in de prompt door OPENBAAR.</p>"
       },
       {
-        "title": "Wat je opdrachtgever eigenlijk moet weten",
-        "body": "<p>Dat de code op GitHub staat, of hij openbaar is, en wat er aan gegevens in zit. Dat is een gesprek van twee minuten (hulpmiddel 09) en het voorkomt het ongemakkelijke moment waarop hij het zelf ontdekt.</p>"
+        "title": "Wat je opdrachtgever moet weten",
+        "body": "<p>Dat de code op GitHub staat, of hij openbaar is, en wat er aan gegevens in zit. Een gesprek van twee minuten (hulpmiddel 09), en het voorkomt het moment waarop hij het zelf ontdekt.</p>"
       }
     ],
-    "_id": "c-509",
-    "_parentId": "b-509",
+    "_id": "c-506",
+    "_parentId": "b-506",
     "_type": "component"
   },
   {
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Vanaf nu: de lus",
-    "displayTitle": "Vanaf nu: de lus",
-    "body": "<p>Elke keer dat je iets verandert, doe je deze drie. Meer is het niet.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>git add .\ngit commit -m &quot;Wat je hebt veranderd&quot;\ngit push</code></pre></div></div><p class=\"commando__na\">Wil je zien wat je tot nu toe hebt vastgelegd: git log --oneline geeft je de lijst, nieuwste bovenaan.</p>",
+    "title": "Vanaf nu: één zin",
+    "displayTitle": "Vanaf nu: één zin",
+    "body": "<p>Heb je iets veranderd, dan zeg je tegen je assistent:</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>Leg vast wat ik net heb veranderd en push het.</code></pre></div></div><p class=\"commando__na\">Hij kiest zelf een boodschap. Zegt die \"update\", vraag dan om een betere: \"Demontagestappen toegevoegd\" helpt je over drie weken, \"update\" niet. Wil je terugzien wat er is vastgelegd, vraag dan om de geschiedenis.</p>",
     "instruction": "",
-    "_id": "c-510",
-    "_parentId": "b-510",
+    "_id": "c-507",
+    "_parentId": "b-507",
     "_type": "component"
   },
   {
@@ -1060,10 +1012,10 @@
     "_layout": "full",
     "title": "Oefening: je eigen repository",
     "displayTitle": "Oefening: je eigen repository",
-    "body": "<p>Doe de vijf stappen op je eigen pagina en vul daarna dit in.</p><div class=\"canvas-groep\" data-laag=\"Oefening: je eigen repository\"><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h05-naam\">Hoe heet je repository?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h05-naam\" name=\"h05-naam\" rows=\"2\" placeholder=\"Kleine letters, streepjes\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h05-zichtbaar\">Privé of openbaar, en waarom?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h05-zichtbaar\" name=\"h05-zichtbaar\" rows=\"2\" placeholder=\"Bij gegevens van je opdrachtgever: privé\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h05-negeren\">Wat staat er in je .gitignore?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h05-negeren\" name=\"h05-negeren\" rows=\"2\" placeholder=\"En waarom staat het daarin?\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h05-commit\">Wat was je eerste commitboodschap?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h05-commit\" name=\"h05-commit\" rows=\"2\" placeholder=\"Zegt hij wát er is veranderd?\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h05-url\">Wat is het adres van je repository?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h05-url\" name=\"h05-url\" rows=\"2\" placeholder=\"github.com/jouwnaam/jouwproject\"></textarea></div></div>",
+    "body": "<p>Geef de prompt voor je eigen pagina en vul daarna dit in.</p><div class=\"canvas-groep\" data-laag=\"Oefening: je eigen repository\"><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h05-naam\">Hoe heet je repository?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h05-naam\" name=\"h05-naam\" rows=\"2\" placeholder=\"Kleine letters, streepjes\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h05-zichtbaar\">Privé of openbaar, en waarom?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h05-zichtbaar\" name=\"h05-zichtbaar\" rows=\"2\" placeholder=\"Bij gegevens van je opdrachtgever: privé\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h05-lijst\">Stond er iets in de lijst dat je hebt tegengehouden?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h05-lijst\" name=\"h05-lijst\" rows=\"2\" placeholder=\"Wat, en waarom?\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h05-commit\">Welke commitboodschap koos je assistent?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h05-commit\" name=\"h05-commit\" rows=\"2\" placeholder=\"Zegt hij wát er is veranderd?\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h05-url\">Wat is het adres van je repository?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h05-url\" name=\"h05-url\" rows=\"2\" placeholder=\"github.com/jouwnaam/jouwproject\"></textarea></div></div>",
     "instruction": "",
-    "_id": "c-511",
-    "_parentId": "b-511",
+    "_id": "c-508",
+    "_parentId": "b-508",
     "_type": "component"
   },
   {
@@ -1072,10 +1024,10 @@
     "_layout": "full",
     "title": "Meenemen",
     "displayTitle": "Meenemen",
-    "body": "<p>Staat je pagina op GitHub? Dan kun je vanaf nu nooit meer iets kwijtraken wat je hebt vastgelegd. In het volgende hoofdstuk komt hij online.</p><div class=\"canvas-acties\"><button type=\"button\" class=\"btn-canvas js-canvas-kopieren\">Kopieer als tekst</button> <button type=\"button\" class=\"btn-canvas btn-canvas--stil js-canvas-wissen\">Wis mijn antwoorden</button><span class=\"canvas-melding js-canvas-melding\" role=\"status\" aria-live=\"polite\"></span></div>",
+    "body": "<p>Staat je pagina op GitHub? Dan raak je vanaf nu niets meer kwijt wat je hebt vastgelegd. In het volgende hoofdstuk komt hij online.</p><div class=\"canvas-acties\"><button type=\"button\" class=\"btn-canvas js-canvas-kopieren\">Kopieer als tekst</button> <button type=\"button\" class=\"btn-canvas btn-canvas--stil js-canvas-wissen\">Wis mijn antwoorden</button><span class=\"canvas-melding js-canvas-melding\" role=\"status\" aria-live=\"polite\"></span></div>",
     "instruction": "",
-    "_id": "c-512",
-    "_parentId": "b-512",
+    "_id": "c-509",
+    "_parentId": "b-509",
     "_type": "component"
   },
   {
@@ -1117,7 +1069,7 @@
     ],
     "_feedback": {
       "title": "Even checken",
-      "correct": "<p>Klopt, en dit is waarom stap 3 vóór stap 4 komt. De geschiedenis bewaart alles; een latere commit haalt het uit de huidige versie maar niet uit het verleden. Bij persoonsgegevens is dit een datalek, ook in een privérepository — meld het bij je docent en je opdrachtgever.</p>",
+      "correct": "<p>Klopt, en dit is waarom je de lijst leest vóórdat er iets wordt vastgelegd. De geschiedenis bewaart alles; een latere commit haalt het uit de huidige versie maar niet uit het verleden. Bij persoonsgegevens is dit een datalek, ook in een privérepository — meld het bij je docent en je opdrachtgever.</p>",
       "_incorrect": {
         "final": "<p>Nog niet. Een commit weghalen verwijdert het bestand uit de nieuwste versie, maar wie terugbladert vindt het gewoon. Dat is precies de eigenschap die versiebeheer nuttig maakt, en hier werkt hij tegen je.</p>"
       },
@@ -1125,8 +1077,8 @@
         "final": "<p>Nog niet helemaal.</p>"
       }
     },
-    "_id": "c-513",
-    "_parentId": "b-513",
+    "_id": "c-510",
+    "_parentId": "b-510",
     "_type": "component"
   },
   {
@@ -1137,8 +1089,8 @@
     "displayTitle": "",
     "body": "<div class=\"paginanav__rij\"><a class=\"paginanav__knop paginanav__knop--stil\" href=\"#/\"><span class=\"paginanav__label\">Terug naar</span><span class=\"paginanav__titel\">Overzicht</span></a><a class=\"paginanav__knop\" href=\"#/id/co-6\"><span class=\"paginanav__label\">Volgende onderdeel</span><span class=\"paginanav__titel\">Publiceren op een echt adres</span></a></div>",
     "instruction": "",
-    "_id": "c-514",
-    "_parentId": "b-514",
+    "_id": "c-511",
+    "_parentId": "b-511",
     "_type": "component"
   },
   {
@@ -1149,8 +1101,8 @@
     "displayTitle": "",
     "body": "<a class=\"terugnaar\" href=\"#/\"><span class=\"terugnaar__pijl\" aria-hidden=\"true\">&#8592;</span>Overzicht</a>",
     "instruction": "",
-    "_id": "c-617",
-    "_parentId": "b-617",
+    "_id": "c-616",
+    "_parentId": "b-616",
     "_type": "component"
   },
   {
@@ -1171,7 +1123,7 @@
     "_layout": "full",
     "title": "Stappenplan: publiceren",
     "displayTitle": "Stappenplan: publiceren",
-    "body": "<p>Drie stappen, en één prompt doet de eerste twee. Voer dit uit in dezelfde map als je repository uit hoofdstuk 5.</p><ol><li><b>Laat je assistent Hosting inrichten.</b> Hij schrijft twee kleine bestanden en verplaatst je pagina naar de juiste map.</li><li><b>Publiceren.</b> Eén commando, en je krijgt je adres terug.</li><li><b>Vastleggen.</b> Zodat je repository klopt met wat er online staat.</li></ol>",
+    "body": "<p>Twee prompts, in dezelfde map als je repository uit hoofdstuk 5.</p><ol><li><b>Hosting inrichten.</b> Je assistent schrijft twee kleine bestanden en verplaatst je pagina naar de juiste map. Jij kijkt wat erin staat.</li><li><b>Publiceren en vastleggen.</b> Je krijgt je adres terug, en je repository klopt met wat er online staat.</li></ol>",
     "instruction": "",
     "_id": "c-602",
     "_parentId": "b-602",
@@ -1217,24 +1169,12 @@
     "_component": "text",
     "_classes": "",
     "_layout": "full",
-    "title": "Stap 2: publiceren",
-    "displayTitle": "Stap 2: publiceren",
-    "body": "<div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>firebase deploy --only hosting</code></pre></div></div><p class=\"commando__na\">Na een halve minuut staat er \"Deploy complete!\" met daaronder je Hosting URL. Open die meteen even, ook op je telefoon.</p>",
+    "title": "Stap 2: publiceren en vastleggen",
+    "displayTitle": "Stap 2: publiceren en vastleggen",
+    "body": "<p>Heb je gezien wat er in de bestanden staat, dan maakt deze zin het af.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>Publiceer naar Firebase Hosting, leg alles vast en push het.</code></pre></div></div><p class=\"commando__na\">Na een halve minuut krijg je je adres terug, iets als jouw-project.web.app. Open het meteen, ook op je telefoon. Onder water zijn dat firebase deploy --only hosting, en daarna git add, commit en push.</p>",
     "instruction": "",
     "_id": "c-606",
     "_parentId": "b-606",
-    "_type": "component"
-  },
-  {
-    "_component": "text",
-    "_classes": "",
-    "_layout": "full",
-    "title": "Stap 3: vastleggen",
-    "displayTitle": "Stap 3: vastleggen",
-    "body": "<p>Er zijn bestanden bijgekomen en je pagina is verplaatst. Leg dat vast, anders loopt je repository achter op wat er online staat.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>git add .\ngit commit -m &quot;Firebase Hosting ingericht en eerste versie gepubliceerd&quot;\ngit push</code></pre></div></div><p class=\"commando__na\">Ook dit kun je in één zin aan je assistent vragen: leg vast en publiceer.</p>",
-    "instruction": "",
-    "_id": "c-607",
-    "_parentId": "b-607",
     "_type": "component"
   },
   {
@@ -1245,8 +1185,8 @@
     "displayTitle": "Publiceren en vastleggen zijn twee dingen",
     "body": "<p>Dit is de verwarring die het vaakst voorkomt. <code>git push</code> zet je code op GitHub. <code>firebase deploy</code> zet je pagina online. Ze hebben niets met elkaar te maken.</p><p>Je kunt dus publiceren zonder te committen — dan staat er iets online dat in geen enkele versie is vastgelegd. En je kunt committen zonder te publiceren — dan is de site nog de oude. Doe ze allebei, in die volgorde: eerst vastleggen, dan publiceren. Dan hoort bij elke live versie een commit die je kunt terugvinden.</p>",
     "instruction": "",
-    "_id": "c-608",
-    "_parentId": "b-608",
+    "_id": "c-607",
+    "_parentId": "b-607",
     "_type": "component"
   },
   {
@@ -1255,10 +1195,10 @@
     "_layout": "full",
     "title": "De bijwerklus",
     "displayTitle": "De bijwerklus",
-    "body": "<p>Vanaf nu ziet elke wijziging er zo uit. Je assistent kan deze drie in één keer voor je doen als je zegt: leg vast en publiceer.</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>git add .\ngit commit -m &quot;Demontagestappen toegevoegd&quot;\ngit push\nfirebase deploy --only hosting</code></pre></div></div>",
+    "body": "<p>Vanaf nu ziet elke wijziging er zo uit: je past iets aan, en zegt:</p><div class=\"commando\"><div class=\"commando__blok\"><div class=\"commando__balk\"><span class=\"commando__label\">Windows en macOS</span><button type=\"button\" class=\"commando__kopieer js-commando-kopieren\" data-doel=\"Windows en macOS\" aria-label=\"Kopi&euml;ren: Windows en macOS\">Kopi&euml;ren</button></div><pre class=\"commando__code\"><code>Leg vast wat ik heb veranderd, push het en publiceer.</code></pre></div></div><p class=\"commando__na\">Eerst vastleggen, dan publiceren — die volgorde houdt je assistent aan als je het zo vraagt. Dan hoort bij elke live versie een commit die je kunt terugvinden.</p>",
     "instruction": "",
-    "_id": "c-609",
-    "_parentId": "b-609",
+    "_id": "c-608",
+    "_parentId": "b-608",
     "_type": "component"
   },
   {
@@ -1280,8 +1220,8 @@
         "body": "<p>Er is geen commando voor. Terugdraaien doe je in de Firebase-console: ga naar <i>Hosting</i>, kijk in de lijst met releases, en kies bij de versie die het wel deed voor <i>Terugdraaien</i>. Binnen een paar seconden staat die er weer op.</p><p>Moet de site helemaal uit de lucht, bijvoorbeeld omdat er per ongeluk vertrouwelijke gegevens op staan, dan is <code>firebase hosting:disable</code> de snelste weg. Daarna kun je rustig repareren.</p>"
       }
     ],
-    "_id": "c-610",
-    "_parentId": "b-610",
+    "_id": "c-609",
+    "_parentId": "b-609",
     "_type": "component"
   },
   {
@@ -1292,8 +1232,8 @@
     "displayTitle": "Vier plekken om het neer te zetten",
     "body": "<p>Firebase Hosting is niet de enige route, en het is goed om te weten wanneer je wat kiest. Deze vier zijn allemaal gratis en vragen geen betaalgegevens. Ze verschillen in wat ze kunnen dráaien: alleen bestanden, of ook code.</p><p>De korte versie:</p><ul><li>Alleen een pagina, en hij mag openbaar &mdash; <b>GitHub Pages</b>.</li><li>Een pagina die ook gegevens bewaart &mdash; <b>Firebase Hosting</b>, wat we hier doen.</li><li>Je hebt echte servercode nodig, en het is je eigen project &mdash; <b>Vercel</b>.</li><li>Je wilt een draaiende server even uitproberen &mdash; <b>Render</b>.</li></ul><p>Kies er één en leer die goed. Wisselen halverwege kost je meer tijd dan het oplevert, en aan je opdrachtgever kun je toch niet uitleggen waarom het adres ineens anders is.</p>",
     "instruction": "",
-    "_id": "c-611",
-    "_parentId": "b-611",
+    "_id": "c-610",
+    "_parentId": "b-610",
     "_type": "component"
   },
   {
@@ -1323,8 +1263,8 @@
         "body": "<p>Statische sites zijn er gratis, en je kunt er ook een echte webservice draaien: Node, Python, wat je wilt, met een database ernaast. Geen betaalgegevens nodig. Dat maakt het de handigste plek om iets uit te proberen wat meer moet doen dan bestanden serveren.</p><p><b>Waar het ophoudt:</b> een gratis webservice valt na een kwartier zonder verkeer in slaap en doet er dan dertig tot zestig seconden over om wakker te worden. Wie erop klikt, kijkt zolang naar een lege pagina. Prima om zelf te testen of live iets te demonstreren, niet om een adres aan je opdrachtgever te geven. De gratis database verloopt bovendien na dertig dagen — zet daar niets in wat je nodig hebt.</p>"
       }
     ],
-    "_id": "c-612",
-    "_parentId": "b-612",
+    "_id": "c-611",
+    "_parentId": "b-611",
     "_type": "component"
   },
   {
@@ -1335,8 +1275,8 @@
     "displayTitle": "Oefening: jouw site online",
     "body": "<p>Publiceer je eigen pagina en vul dit in.</p><div class=\"canvas-groep\" data-laag=\"Oefening: jouw site online\"><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h06-url\">Wat is je Hosting-adres geworden?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h06-url\" name=\"h06-url\" rows=\"2\" placeholder=\"De .web.app-versie\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h06-telefoon\">Hoe ziet hij eruit op een telefoon?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h06-telefoon\" name=\"h06-telefoon\" rows=\"2\" placeholder=\"Echt even kijken, niet alleen het venster smal maken\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h06-verschil\">Wat is het verschil tussen git push en firebase deploy?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h06-verschil\" name=\"h06-verschil\" rows=\"2\" placeholder=\"In je eigen woorden\"></textarea></div><div class=\"canvas-rij\"><label class=\"canvas-label\" for=\"h06-delen\">Deel je een preview of het echte adres? Waarom?</label><textarea class=\"canvas-invoer js-canvas-veld\" id=\"h06-delen\" name=\"h06-delen\" rows=\"2\" placeholder=\"Concept-cijfers horen niet op het open web\"></textarea></div></div>",
     "instruction": "",
-    "_id": "c-613",
-    "_parentId": "b-613",
+    "_id": "c-612",
+    "_parentId": "b-612",
     "_type": "component"
   },
   {
@@ -1347,8 +1287,8 @@
     "displayTitle": "Meenemen",
     "body": "<p>Zet je adres in je aantekeningen en stuur het nog niet rond. In hoofdstuk 8 staat de lijst die je eerst langsloopt.</p><div class=\"canvas-acties\"><button type=\"button\" class=\"btn-canvas js-canvas-kopieren\">Kopieer als tekst</button> <button type=\"button\" class=\"btn-canvas btn-canvas--stil js-canvas-wissen\">Wis mijn antwoorden</button><span class=\"canvas-melding js-canvas-melding\" role=\"status\" aria-live=\"polite\"></span></div>",
     "instruction": "",
-    "_id": "c-614",
-    "_parentId": "b-614",
+    "_id": "c-613",
+    "_parentId": "b-613",
     "_type": "component"
   },
   {
@@ -1398,8 +1338,8 @@
         "final": "<p>Nog niet helemaal.</p>"
       }
     },
-    "_id": "c-615",
-    "_parentId": "b-615",
+    "_id": "c-614",
+    "_parentId": "b-614",
     "_type": "component"
   },
   {
@@ -1410,8 +1350,8 @@
     "displayTitle": "",
     "body": "<div class=\"paginanav__rij\"><a class=\"paginanav__knop paginanav__knop--stil\" href=\"#/\"><span class=\"paginanav__label\">Terug naar</span><span class=\"paginanav__titel\">Overzicht</span></a><a class=\"paginanav__knop\" href=\"#/id/co-7\"><span class=\"paginanav__label\">Volgende onderdeel</span><span class=\"paginanav__titel\">De backend: antwoorden bewaren</span></a></div>",
     "instruction": "",
-    "_id": "c-616",
-    "_parentId": "b-616",
+    "_id": "c-615",
+    "_parentId": "b-615",
     "_type": "component"
   },
   {
